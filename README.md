@@ -8,5 +8,4 @@ https://github.com/tuuyen13/webphongtro.git
 - KHÔNG CODE TRỰC TIẾP LÊN FILE, TẠO FILE MỚI THEO CÚ PHÁP, COPY CODE LẠI 
 - Đặt tên file theo từng chức năng: Ex: Blog, BlogDetail, Homepage,......
 kjkkjhjk
-Toàn đang test
 
