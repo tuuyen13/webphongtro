@@ -10,6 +10,18 @@ https://github.com/tuuyen13/webphongtro.git
 
 - Push file sau khi code xong, tạo pull request check và fix conflict(nếu có)
 - Uyên merge file
+3. LƯU Ý 
+- Slogan tiếng việt 
+- Viết hoa chữ đầu ở các header 
+- Chốt link zalo,facebook ở dạng biểu tượng ra link 
+- Bên ngoài liên hệ: Xem chi tiết, icon zalo, fb 
+- Kích thước hình:  
+- 900x900
+
+
+
+
+
 
 
 
