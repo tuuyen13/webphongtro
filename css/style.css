@@ -124,6 +124,9 @@
     #header-carousel .carousel-item {
         position: relative;
         min-height: 450px;
+        /* new */
+        font-weight: 400;
+    
     }
     
     #header-carousel .carousel-item img {
