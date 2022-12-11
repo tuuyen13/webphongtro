@@ -586,12 +586,26 @@
     border-right: none;
 }
 /* ServiceMOtelRoom */
-:root{
-    --orange:#33d9b2;
+.btn-service{
+    font-size: 15px;
+    padding:.3rem 1rem;
+    background:#FEA116;
+    color:#FFFFFF;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
 }
 
 .plan{
-    min-height: 30vh;
+    min-height: 10vh;
     background:#eee;
 }
 
@@ -600,7 +614,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:2rem 0;
+    padding: 10px 0;
 }
 
 .plan .box-container .box{
@@ -608,17 +622,18 @@
     margin:1rem;
     padding:2rem;
     width:30rem;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 0 .3rem rgba(0,0,0,.3);
     position: relative;
 }
 
 .plan .box-container .box .title{
-    font-size: 1rem;
-    color:#666;
+    font-size: 20px;
+    color:#000000;
     padding:1rem 0;
+    text-align: center;
 }
-
+/* 
 .plan .box-container .box .price{
     background:var(--orange);
     color:#fff;
@@ -632,12 +647,12 @@
 }
 
 .plan .box-container .box .price span{
-    font-size: 1rem;
-}
+    font-size: 10px;
+} */
 
 .plan .box-container .box ul li{
-    color:#666;
+    color:#000000;
     list-style: none;
     font-size: 1rem;
-    padding:1rem 0;
+    padding: 5px 0;
 }
