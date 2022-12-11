@@ -27,9 +27,12 @@
     
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+    
     </head>
 
 <body>
+    
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -81,36 +84,26 @@
                                 <a href="index.html" class="nav-item nav-link">Trang chủ</a>
 
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Cho thuê</a>
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cho thuê</a>
                                     <div class="dropdown-menu rounded-0 m-0">
                                         <a href="" class="dropdown-item">Căn hộ</a>
                                         <a href="" class="dropdown-item">Phòng trọ</a>
                                         <a href="" class="dropdown-item">Mặt bằng</a>
                                     </div>
                                 </div>
-
                                 <a href="" class="nav-item nav-link">Ở ghép</a>
-                                <a href="" class="nav-item nav-link">Vận chuyển</a>
+                                <a href="" class="nav-item nav-link">Blogs</a>
+                               
+                                <a href="" class="nav-link active"> Vận chuyển</a>
                                 <a href="" class="nav-item nav-link">Dọn phòng</a>
                                 <a href="" class="nav-item nav-link">Thanh toán</a>
-                                <a href="" class="nav-item nav-link">Blog</a>
                                 <a href="about.html" class="nav-item nav-link">Về chúng tôi</a>
-                        
-                            </div>
-                            
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
         <!-- Header End -->
-<!-- Header End -->
-<!-- Header End -->
-<!-- Header End -->
-<!-- Header End -->
-<!-- Header End -->
-<!-- Header End -->
-
 
         <!-- Page Header Start -->
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
@@ -130,7 +123,7 @@
         <!-- Page Header End -->
 
 
-        <!-- Booking Start -->
+        <!-- Filter start -->
         <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="bg-white shadow" style="padding: 35px;">
@@ -140,182 +133,355 @@
                                 <div class="col-md-3">
                                     <div class="date" id="date1" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                            placeholder="Thời gian vận chuyển" data-target="#date1" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
+                                <!-- filter address -->
                                 <div class="col-md-3">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Địa điểm" />
+                                        
+                                        <datalist id="datalistOptions">
+                                            <option value="San Francisco">
+                                            <option value="New York">
+                                            <option value="Seattle">
+                                            <option value="Los Angeles">
+                                            <option value="Chicago">
+                                                <option value="Seattle">
+                                            <option value="Los Angeles">
+                                            <option value="Chicago">
+                                                <option value="Seattle">
+                                                    <option value="Los Angeles">
+                                                    <option value="Chicago">
+                                                        <option value="Seattle">
+                                                            <option value="Los Angeles">
+                                                            <option value="Chicago">
+                                          </datalist>
                                     </div>
-                                </div>
+                                </div>                               
                                 <div class="col-md-3">
                                     <select class="form-select">
-                                        <option selected>Adult</option>
-                                        <option value="1">Adult 1</option>
-                                        <option value="2">Adult 2</option>
-                                        <option value="3">Adult 3</option>
+                                        <option selected>Giá</option>
+                                        <option value="1">500.000 VNĐ</option>
+                                        <option value="2">Dưới 2.000.000 VNĐ</option>
+                                        <option value="3">Dưới 5.000.000 VNĐ</option>
+                                        <option value="3">Dưới 7.000.000 VNĐ</option>
+                                        <option value="3">Tất cả</option>
                                     </select>
                                 </div>
                                 <div class="col-md-3">
                                     <select class="form-select">
-                                        <option selected>Child</option>
-                                        <option value="1">Child 1</option>
-                                        <option value="2">Child 2</option>
-                                        <option value="3">Child 3</option>
+                                        <option selected>Loại xe</option>
+                                        <option value="1">Xe 500kg</option>
+                                        <option value="2">Xe 750kg</option>
+                                        <option value="3">Xe 1.5 Tấn</option>
+                                        <option value="3">Xe 1.9 Tấn</option>
+                                        <option value="3">Xe 2 Tấn</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                            <button class="btn btn-primary w-100">Tìm kiếm</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Booking End -->
+        <!-- Filter end -->
 
 
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
+       <!-- Choose service Start -->
+       <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title text-center text-primary text-uppercase">MORO</h6>
+                <h1 class="mb-5">Đơn vị <span class="text-primary text-uppercase">Vận chuyển</span></h1>
+            </div>
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/delivery-1.png" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">13.000 VNĐ/Km</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-0">
+                                <h5 class="mb-1">Chuyển nhà 24h</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class= "d-flex justify-content-between">
+                                <small class="mb-1"><i class="fa fa-map-marker"  font-size: 15px></i>   Toàn quốc</small>
+                                <!-- <small class="border-end me-3 pe-3"><i class="fas fa-car-side" font-size:x-small></i> 200.000 VNĐ/xe</small>
+                                <small><i class="fas fa-clock" font-size: x-small></i> 70.000 VNĐ/Giờ</small> -->
+                            </div>
+
+                            <p class="text-body mb-3">Chuyển nhà trọ sinh viên tphcm sẽ tiện lợi, an toàn và tiết kiệm chi phí hơn nhiều với dịch vụ chuyển nhà trọ trọn gói giá rẻ của Chuyển Nhà 24h.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="delivery_detail">Chi tiết</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Liên hệ</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/delivery-2.png" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">16.000 VNĐ/Km</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-0">
+                                <h5 class="mb-1">Thành Hưng house</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
                                 </div>
                             </div>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
+                            <div class= "d-flex justify-content-between">
+                                <small class="mb-1"><i class="fa fa-map-marker"></i>   Toàn quốc</small>
+                                <!-- <small class="border-end me-3 pe-3"><i class="fas fa-car-side" font-size:x-small></i> 280.000 VNĐ/xe</small>
+                                <small><i class="fas fa-clock" font-size: x-small></i> 60.000 VNĐ/Giờ</small> -->
+                            </div>
+                            <!-- <div class="d-flex bd-highlight">
+                                <div {class="p-2 flex-fill" class="fas fa-truck" font=""}> Xe tải</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 200.000 VNĐ/xe</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 70.000 VNĐ/giờ</div>
+                              </div> -->
+                            <p class="text-body mb-3">Dịch vụ chuyển nhà trọn gói sinh viên của Taxi Tải Thành Hưng cam kết sẽ cung cấp cho các bạn sinh viên giá chuyển nhà tiết kiệm, thời gian vận chuyển nhanh chóng.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi tiết</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Liên hệ</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/delivery-4.png" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">20.000 VNĐ/Km</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-0">
+                                <h5 class="mb-1">Kiến Vàng</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
                                 </div>
                             </div>
-                            <h5 class="mb-3">Food & Restaurant</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
+                            <div class= "d-flex justify-content-between">
+                                <small class="mb-1"><i class="fa fa-map-marker" font-size:x-small></i> Hồ Chí Minh</small>
+                                <!-- <small class="border-end me-3 pe-3"><i class="fas fa-car-side" font-size:x-small></i> 150.000 VNĐ/xe</small>
+                                <small><i class="fas fa-clock" font-size: x-small></i> 60.000 VNĐ/Giờ</small> -->
+                            </div>
+                            <!-- <div class="d-flex bd-highlight">
+                                <div {class="p-2 flex-fill" class="fas fa-truck" font=""}> Xe tải</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 200.000 VNĐ/xe</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 70.000 VNĐ/giờ</div>
+                              </div> -->
+                            <p class="text-body mb-3">Dịch vụ chuyển nhà sinh viên tại Kiến Vàng có nhiều điểm mạnh như thiết bị hiện đại, đa dạng, đội ngũ nhân viên được đào tạo bài bản, phục vụ chuyên nghiệp</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi tiết</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Liên hệ</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
+                </div>
+                
+
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/delivery-5.png" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">20.000 VNĐ/Km</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-0">
+                                <h5 class="mb-1">Xe ba gác</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary-grey"></small>
                                 </div>
                             </div>
-                            <h5 class="mb-3">Spa & Fitness</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
+                            <div class= "d-flex justify-content-between">
+                                <small class="mb-1"><i class="fa fa-map-marker" font-size:x-small></i> Bình Dương</small>
+                                <!-- <small class="border-end me-3 pe-3"><i class="fas fa-car-side" font-size:x-small></i> 160.000 VNĐ/xe</small>
+                                <small><i class="fas fa-clock" font-size: x-small></i> 50.000 VNĐ/Giờ</small> -->
+                            </div>
+                            <!-- <div class="d-flex bd-highlight">
+                                <div {class="p-2 flex-fill" class="fas fa-truck" font=""}> Xe tải</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 200.000 VNĐ/xe</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 70.000 VNĐ/giờ</div>
+                              </div> -->
+                            <p class="text-body mb-3">Chế độ ưu đãi giúp các bạn sinh viên. Dịch vụ chuyển nhà sinh viên của Taxi Tải Giá Rẻ 24H đó là các xe chở đồ hay dụng cụ tháo lắp đều đạt chất lượng cao.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi tiết</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Liên hệ</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
+                </div>
+
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/delivery-7.png" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">30.000 VNĐ/Km</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-0">
+                                <h5 class="mb-1">Việt Moving</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary-grey"></small>
                                 </div>
                             </div>
-                            <h5 class="mb-3">Sports & Gaming</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
+                            <div class= "d-flex justify-content-between">
+                                <small class="mb-1"><i class="fas fa-map-marker" font-size:x-small></i> Đà Nẵng</small>
+                                <!-- <small class="border-end me-3 pe-3"><i class="fas fa-car-side" font-size:x-small></i> 180.000 VNĐ/xe</small>
+                                <small><i class="fas fa-clock" font-size: x-small></i> 65.000 VNĐ/Giờ</small> -->
+                            </div>
+                            <!-- <div class="d-flex bd-highlight">
+                                <div {class="p-2 flex-fill" class="fas fa-truck" font=""}> Xe tải</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 200.000 VNĐ/xe</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 70.000 VNĐ/giờ</div>
+                              </div> -->
+                            <p class="text-body mb-3">Vận chuyển nhanh chóng, đóng gói đồ đạc đảm bảo, mang đến sự an toàn tuyệt đối và giá thành dịch vụ cạnh tranh trên thị trường.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi tiết</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Liên hệ</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+                </div>
+
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/delivery-6.png" alt="">
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">40.000 VNĐ/Km</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-0">
+                                <h5 class="mb-1">Vinamoves</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary-grey"></small>
                                 </div>
                             </div>
-                            <h5 class="mb-3">Event & Party</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
-                                </div>
+                            <div class= "d-flex justify-content-between">
+                                <small class="mb-1"><i class="fas fa-map-marker" font-size:x-small></i> Hồ Chí Minh</small>
+                                
                             </div>
-                            <h5 class="mb-3">GYM & Yoga</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
+                            <!-- <div class="d-flex bd-highlight">
+                                <div {class="p-2 flex-fill" class="fas fa-truck" font=""}> Xe tải</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 200.000 VNĐ/xe</div>
+                                <div {class="p-2 flex-fill" class="fas fa-truck"}> 70.000 VNĐ/giờ</div>
+                              </div> -->
+                            <p class="text-body mb-3">Một dịch vụ chuyển nhà sinh viên uy tín, nhanh chóng, an toàn với mức giá rẻ thì Vinamoves là địa chỉ rất đáng chú ý đến cho việc vận chuyển của sinh viên</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi tiết</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Liên hệ</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+    </div>
+    <!-- Choose service End -->
 
 
-        <!-- Testimonial Start -->
-        <div class="container-xxl testimonial mt-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s" style="margin-bottom: 90px;">
-            <div class="container">
-                <div class="owl-carousel testimonial-carousel py-5">
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
+    <!-- Testimonial Start -->
+    <div class="container-xxl testimonial mt-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="owl-carousel testimonial-carousel py-5">
+                <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                    <p>Đơn vị vận chuyển uy tín, nhanh chóng, giá cả hợp lí, thông tin liên lạc chính xác giúp tôi dễ dàng trong việc liên hệ, giao diện dễ nhìn.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6 class="fw-bold mb-1">Minh Trang</h6>
+                            <small>NV văn phòng</small>
                         </div>
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
                     </div>
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
+                    <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                </div>
+                <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                    <p>Thật quá tiện lợi luôn nhé! Nhờ ghé qua trang mà mình kiếm được đơn vị hỗ trợ vận chuyển gần nhà lại rẻ, giá sinh viên.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6 class="fw-bold mb-1">Đức Trung</h6>
+                            <small>Sinh viên</small>
                         </div>
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
                     </div>
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
+                    <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                </div>
+                <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                    <p>Nơi lý tưởng cho việc booking dịch vụ về nhà cửa, đầy đủ dịch vụ, tuy nhiên có hơi ích các bên đối tác để lựa chọn. Mong Moro cải thiện nhiều dịch vụ hơn.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6 class="fw-bold mb-1">Văn Trọng</h6>
+                            <small>Làm việc tự do</small>
                         </div>
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <!-- <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 border rounded p-1">
+                <div class="border rounded text-center p-1">
+                    <div class="bg-white rounded text-center p-5">
+                        <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Newsletter Start -->
-        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 border rounded p-1">
-                    <div class="border rounded text-center p-1">
-                        <div class="bg-white rounded text-center p-5">
-                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
-                            <div class="position-relative mx-auto" style="max-width: 400px;">
-                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter Start -->
+    </div> -->
+    <!-- Newsletter Start -->
         
 
         <!-- Footer Start -->
