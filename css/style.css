@@ -1061,3 +1061,57 @@
     color: #000000, #0F172B;
   }
 /* ZAng ends */
+/* ServiceMOtelRoom */
+.btn-service{
+  font-size: 15px;
+  padding:.3rem 1rem;
+  background:#FEA116;
+  color:#FFFFFF;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: .5s;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.plan{
+  min-height: 10vh;
+  background:#eee;
+}
+.plan .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.plan .box-container .box{
+  background:#fff;
+  margin:1rem;
+  padding:2rem;
+  width:30rem;
+  text-align: left;
+  box-shadow: 0 0 .3rem rgba(0,0,0,.3);
+  position: relative;
+}
+
+.plan .box-container .box .title{
+  font-size: 20px;
+  color:#000000;
+  padding:1rem 0;
+  text-align: center;
+}
+
+.plan .box-container .box ul li{
+  color:#666;
+  color:#000000;
+  list-style: none;
+  font-size: 1rem;
+  padding: 5px 0;
+}
+
