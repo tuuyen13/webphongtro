@@ -1,518 +1,362 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+        <meta name='robots' content='noindex,nofolow' />
+        <meta name="_token" content="eRRxYwsJu58tBpbxpx2F7hoW2HA4qFXFUzp66nNn">
+        
+        <link rel="stylesheet" href="/css/toastr.min.css?v=20191108">
+        <link rel="stylesheet" href="/css/sweetalert2.min.css?v=20191108">
+        <link rel="stylesheet" href="/css/select2.min.css?v=20191108">
+        <link rel="stylesheet" href="/css/dropzone.min.css?v=20191108">
+                <link rel="stylesheet" href="/dashboard_resource/css/reset.min.css?v=20191108">
+        <link rel="stylesheet" href="/dashboard_resource/css/bootstrap.min.css?v=20191108">
+        <link rel="stylesheet" href="/dashboard_resource/css/phongtro.dashboard.css?v=20191108">
+        <link rel="stylesheet" href="/dashboard_resource/css/phongtro.dashboard.responsive.css?v=20191108">
+        <title>#125318 - Quản lý tin đăng - Phongtro123.com</title>
+        <script type="text/javascript">
+            base_url = "https://phongtro123.com";
+            base_api_url = "https://phongtro123.com/api";
+            get_district_ajax = {ajaxurl: '#'};
+        </script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <title>
-    Profile
-  </title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- CSS Files -->
-   <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-</head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60724554-1"></script>
+    	<script>
+    	window.dataLayer = window.dataLayer || [];
+    	function gtag(){dataLayer.push(arguments);}
+    	gtag('js', new Date());
 
-<body class="g-sidenav-show bg-gray-100">
-  <div class="position-absolute w-100 min-height-300 top-0" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
-    <span class="mask bg-primary opacity-6"></span>
-  </div>
-  <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
-    <div class="sidenav-header">
-      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html " target="_blank">
-        <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold">Argon Dashboard 2</span>
-      </a>
-    </div>
-    <hr class="horizontal dark mt-0">
-    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/dashboard.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/tables.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Tables</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/billing.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Billing</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/virtual-reality.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-app text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Virtual Reality</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/rtl.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">RTL</span>
-          </a>
-        </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="profile.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Profile</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="sign-in.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Sign In</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="sign-up.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-collection text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Sign Up</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </aside>
-  <div class="main-content position-relative max-height-vh-100 h-100">
-    <!-- Navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg bg-transparent shadow-none position-absolute px-4 w-100 z-index-2 mt-n11">
-      <div class="container-fluid py-1">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 ps-2 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="text-white opacity-5" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Profile</li>
-          </ol>
-          <h6 class="text-white font-weight-bolder ms-2">Profile</h6>
-        </nav>
-        <div class="collapse navbar-collapse me-md-0 me-sm-4 mt-sm-0 mt-2" id="navbar">
-          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-            <div class="input-group">
-              <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" placeholder="Type here...">
-            </div>
-          </div>
-          <ul class="navbar-nav justify-content-end">
-            <li class="nav-item d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
-                <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
-              </a>
-            </li>
-            <li class="nav-item d-xl-none ps-3 pe-0 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0">
-                <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
-                  <div class="sidenav-toggler-inner">
-                    <i class="sidenav-toggler-line bg-white"></i>
-                    <i class="sidenav-toggler-line bg-white"></i>
-                    <i class="sidenav-toggler-line bg-white"></i>
-                  </div>
-                </a>
-              </a>
-            </li>
-            <li class="nav-item px-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0">
-                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
-              </a>
-            </li>
-            <li class="nav-item dropdown pe-2 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-bell cursor-pointer"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end px-2 py-3 ms-n4" aria-labelledby="dropdownMenuButton">
-                <li class="mb-2">
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
-                    <div class="d-flex py-1">
-                      <div class="my-auto">
-                        <img src="assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
-                          <span class="font-weight-bold">New message</span> from Laur
-                        </h6>
-                        <p class="text-xs text-secondary mb-0">
-                          <i class="fa fa-clock me-1"></i>
-                          13 minutes ago
-                        </p>
-                      </div>
-                    </div>
-                  </a>
+    	gtag('config', 'UA-60724554-1');
+        </script>
+            </head>
+
+    <body class="desktop dashboard quan-ly tin-dang">				
+<div id="webpage">
+    <nav class="navbar navbar-expand-md fixed-top flex-md-nowrap p-0" id="mobile_navbar_top">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="https://phongtro123.com">Phongtro123.com</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://phongtro123.com">Trang chủ</a>
                 </li>
-                <li class="mb-2">
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
-                    <div class="d-flex py-1">
-                      <div class="my-auto">
-                        <img src="assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark me-3">
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
-                          <span class="font-weight-bold">New album</span> by Travis Scott
-                        </h6>
-                        <p class="text-xs text-secondary mb-0">
-                          <i class="fa fa-clock me-1"></i>
-                          1 day
-                        </p>
-                      </div>
-                    </div>
-                  </a>
+             
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" target="_blank" href="https://phongtro123.com/cho-thue-phong-tro">Phòng trọ</a>
                 </li>
-                <li>
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
-                    <div class="d-flex py-1">
-                      <div class="avatar avatar-sm bg-gradient-secondary me-3 my-auto">
-                        <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <title>credit-card</title>
-                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                              <g transform="translate(1716.000000, 291.000000)">
-                                <g transform="translate(453.000000, 454.000000)">
-                                  <path class="color-background" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z" opacity="0.593633743"></path>
-                                  <path class="color-background" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"></path>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </svg>
-                      </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
-                          Payment successfully completed
-                        </h6>
-                        <p class="text-xs text-secondary mb-0">
-                          <i class="fa fa-clock me-1"></i>
-                          2 days
-                        </p>
-                      </div>
-                    </div>
-                  </a>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" target="_blank" href="https://phongtro123.com/nha-cho-thue">Nhà cho thuê</a>
                 </li>
-              </ul>
-            </li>
-          </ul>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" target="_blank" href="https://phongtro123.com/cho-thue-can-ho">Căn hộ</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" target="_blank" href="https://phongtro123.com/cho-thue-mat-bang">Mặt bằng</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" target="_blank" href="https://phongtro123.com/tim-nguoi-o-ghep">Ở ghép</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link" target="_blank" href="https://phongtro123.com/bang-gia-dich-vu">Bảng giá dịch vụ</a>
+                </li>
+                
+            </ul>
+            <!-- <ul class="navbar-nav float-right pr-4">
+                <div class="dropdown">
+                    <button class="btn btn_account d-none d-md-flex" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Xin chào <strong>tt</strong>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="https://phongtro123.com/thoat">Thoát</a>
+                    </div>
+                </div>
+            </ul> -->
         </div>
-      </div>
+        <div class="button-item menu js_btn_menu">
+			<img src="/images/menu-hamburger.svg">
+			<span class="text">Danh mục</span>
+		</div>
     </nav>
-    <!-- End Navbar -->
-    <div class="card shadow-lg mx-4 card-profile-bottom">
-      <div class="card-body p-3">
-        <div class="row gx-4">
-          <div class="col-auto">
-            <div class="avatar avatar-xl position-relative">
-              <img src="assets/img/team-1.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
-            </div>
-          </div>
-          <div class="col-auto my-auto">
-            <div class="h-100">
-              <h5 class="mb-1">
-                Sayo Kravits
-              </h5>
-              <p class="mb-0 font-weight-bold text-sm">
-                Public Relations
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
-            <div class="nav-wrapper position-relative end-0">
-              <ul class="nav nav-pills nav-fill p-1" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link mb-0 px-0 py-1 active d-flex align-items-center justify-content-center " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
-                    <i class="ni ni-app"></i>
-                    <span class="ms-2">App</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
-                    <i class="ni ni-email-83"></i>
-                    <span class="ms-2">Messages</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
-                    <i class="ni ni-settings-gear-65"></i>
-                    <span class="ms-2">Settings</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="card">
-            <div class="card-header pb-0">
-              <div class="d-flex align-items-center">
-                <p class="mb-0">Edit Profile</p>
-                <button class="btn btn-primary btn-sm ms-auto">Settings</button>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="text-uppercase text-sm">User Information</p>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Username</label>
-                    <input class="form-control" type="text" value="lucky.jesse">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Email address</label>
-                    <input class="form-control" type="email" value="jesse@example.com">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">First name</label>
-                    <input class="form-control" type="text" value="Jesse">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Last name</label>
-                    <input class="form-control" type="text" value="Lucky">
-                  </div>
-                </div>
-              </div>
-              <hr class="horizontal dark">
-              <p class="text-uppercase text-sm">Contact Information</p>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Address</label>
-                    <input class="form-control" type="text" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">City</label>
-                    <input class="form-control" type="text" value="New York">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Country</label>
-                    <input class="form-control" type="text" value="United States">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Postal code</label>
-                    <input class="form-control" type="text" value="437300">
-                  </div>
-                </div>
-              </div>
-              <hr class="horizontal dark">
-              <p class="text-uppercase text-sm">About me</p>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">About me</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-profile">
-            <img src="assets/img/bg-profile.jpg" alt="Image placeholder" class="card-img-top">
-            <div class="row justify-content-center">
-              <div class="col-4 col-lg-4 order-lg-2">
-                <div class="mt-n4 mt-lg-n6 mb-4 mb-lg-0">
-                  <a href="javascript:;">
-                    <img src="assets/img/team-2.jpg" class="rounded-circle img-fluid border border-2 border-white">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card-header text-center border-0 pt-0 pt-lg-2 pb-4 pb-lg-3">
-              <div class="d-flex justify-content-between">
-                <a href="javascript:;" class="btn btn-sm btn-info mb-0 d-none d-lg-block">Connect</a>
-                <a href="javascript:;" class="btn btn-sm btn-info mb-0 d-block d-lg-none"><i class="ni ni-collection"></i></a>
-                <a href="javascript:;" class="btn btn-sm btn-dark float-right mb-0 d-none d-lg-block">Message</a>
-                <a href="javascript:;" class="btn btn-sm btn-dark float-right mb-0 d-block d-lg-none"><i class="ni ni-email-83"></i></a>
-              </div>
-            </div>
-            <div class="card-body pt-0">
-              <div class="row">
-                <div class="col">
-                  <div class="d-flex justify-content-center">
-                    <div class="d-grid text-center">
-                      <span class="text-lg font-weight-bolder">22</span>
-                      <span class="text-sm opacity-8">Friends</span>
-                    </div>
-                    <div class="d-grid text-center mx-4">
-                      <span class="text-lg font-weight-bolder">10</span>
-                      <span class="text-sm opacity-8">Photos</span>
-                    </div>
-                    <div class="d-grid text-center">
-                      <span class="text-lg font-weight-bolder">89</span>
-                      <span class="text-sm opacity-8">Comments</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center mt-4">
-                <h5>
-                  Mark Davis<span class="font-weight-light">, 35</span>
-                </h5>
-                <div class="h6 font-weight-300">
-                  <i class="ni location_pin mr-2"></i>Bucharest, Romania
-                </div>
-                <div class="h6 mt-4">
-                  <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
-                </div>
-                <div>
-                  <i class="ni education_hat mr-2"></i>University of Computer Science
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer pt-3  ">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-6 mb-lg-0 mb-4">
-              <div class="copyright text-center text-sm text-muted text-lg-start">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>,
-                made with <i class="fa fa-heart"></i> by
-                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
-                for a better web.
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </div>
-  <div class="fixed-plugin">
-    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-      <i class="fa fa-cog py-2"> </i>
-    </a>
-    <div class="card shadow-lg">
-      <div class="card-header pb-0 pt-3 ">
-        <div class="float-start">
-          <h5 class="mt-3 mb-0">Argon Configurator</h5>
-          <p>See our dashboard options.</p>
-        </div>
-        <div class="float-end mt-4">
-          <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
-            <i class="fa fa-close"></i>
-          </button>
-        </div>
-        <!-- End Toggle Button -->
-      </div>
-      <hr class="horizontal dark my-1">
-      <div class="card-body pt-sm-3 pt-0 overflow-auto">
-        <!-- Sidebar Backgrounds -->
-        <div>
-          <h6 class="mb-0">Sidebar Colors</h6>
-        </div>
-        <a href="javascript:void(0)" class="switch-trigger background-color">
-          <div class="badge-colors my-2 text-start">
-            <span class="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
-          </div>
-        </a>
-        <!-- Sidenav Type -->
-        <div class="mt-3">
-          <h6 class="mb-0">Sidenav Type</h6>
-          <p class="text-sm">Choose between 2 different sidenav types.</p>
-        </div>
-        <div class="d-flex">
-          <button class="btn bg-gradient-primary w-100 px-3 mb-2 active me-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
-          <button class="btn bg-gradient-primary w-100 px-3 mb-2" data-class="bg-default" onclick="sidebarType(this)">Dark</button>
-        </div>
-        <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
-        <!-- Navbar Fixed -->
-        <hr class="horizontal dark my-sm-4">
-        <div class="mt-2 mb-5 d-flex">
-          <h6 class="mb-0">Light / Dark</h6>
-          <div class="form-check form-switch ps-0 ms-auto my-auto">
-            <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
-</body>
 
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-lg-2 d-none d-lg-block bg-light sidebar">
+                <div class="user_info">
+                    <a href="#" class="clearfix">
+                        <div class="user_avatar"><img src="https://phongtro123.com/images/default-user.png"></div>
+                        <div class="user_meta">
+                            <div class="inner">					
+                                <div class="user_name">tt</div>
+                                <div class="user_verify" style="color: #555; font-size: 0.9rem;">0846667375</div>
+                            </div>
+                        </div>
+                    </a>
+                    <ul>
+                        <li><span>Mã thành viên:</span> <span style="font-weight: 700;"> 125318</span></li>
+                        <li><span>TK Chính:</span> <span style="font-weight: 700;"> 0 đ</span></li>
+                                            </ul>
+                    <a class="btn btn-warning btn-sm mr-1" href="https://phongtro123.com/quan-ly/nap-tien.html">Nạp tiền</a>
+                    <a class="btn btn-danger btn-sm" href="https://phongtro123.com/quan-ly/dang-tin-moi.html">Đăng tin</a>
+    			</div>
+                <ul class="nav nav-sidebar">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://phongtro123.com/quan-ly/tin-dang.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        Quản lý tin đăng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://phongtro123.com/quan-ly/cap-nhat-thong-tin-ca-nhan.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                        Sửa thông tin cá nhân
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://phongtro123.com/quan-ly/nap-tien.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        Nạp tiền vào tài khoản
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://phongtro123.com/quan-ly/lich-su-nap-tien.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        Lịch sử nạp tiền
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://phongtro123.com/quan-ly/lich-su-thanh-toan.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        Lịch sử thanh toán
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://phongtro123.com/bang-gia-dich-vu" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                        Bảng giá dịch vụ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://phongtro123.com/lien-he">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        Liên hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-user-logout" href="https://phongtro123.com/thoat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                        Thoát
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main role="main" class="ml-sm-auto col-lg-10">
+
+            <div class="user_quick_info js-mobile-user-quick-info">
+                <p style="margin-top: 0; margin-bottom: 5px;">Xin chào <strong>tt</strong>. Mã tài khoản: <strong>125318</strong></p>
+                <p style="margin-bottom: 0;">Số dư TK của bạn là: <strong>0 đ</strong></p>
+            </div>
+            				
+    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://phongtro123.com">Phongtro123.com</a></li>
+            <li class="breadcrumb-item"><a href="https://phongtro123.com/quan-ly/index.html">Quản lý</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Danh sách tin đăng</li>
+        </ol>
+    </nav>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Quản lý tin đăng</h1>
+
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="dropdown mr-1">
+                <button class="btn btn-outline-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lọc theo loại VIP
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=all&amp;package=vip50">Tin Hot</a>
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=all&amp;package=vip30">Tin VIP 30</a>
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=all&amp;package=vip20">Tin VIP 20</a>
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=all&amp;package=vip10">Tin VIP 10</a>
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=all&amp;package=normal">Tin thường</a>
+                </div>
+            </div>
+            <div class="dropdown mr-1">
+                <button class="btn btn-outline-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lọc theo trạng thái
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=publish&amp;package=all">Tin đang hiển thị</a>
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=expired&amp;package=all">Tin hết hạn</a>
+                    <a class="dropdown-item" href="https://phongtro123.com/quan-ly/tin-dang.html?status=hidden&amp;package=all">Tin đang ẩn</a>
+                </div>
+            </div>
+            <a class="btn btn-danger btn-sm d-none d-md-block" href="https://phongtro123.com/quan-ly/dang-tin-moi.html">Đăng tin mới</a>
+            <div class="d-lg-none" style="width: 100%;"><a class="btn btn-danger btn-block mt-3" href="https://phongtro123.com/quan-ly/dang-tin-moi.html">Đăng tin mới</a></div>
+        </div>
+
+    </div>
+
+    <div class="d-none d-md-block">
+        <div class="table-responsive">
+            <table class="table table_post_listing table-bordered _table-hover">
+                <thead>
+                    <tr>
+                        <th>Mã tin</th>
+                        <th style="text-align: center; white-space: nowrap;">Ảnh đại diện</th>
+                        <th>Tiêu đề</th>
+                        <th>Giá</th>
+                        <th style="white-space: nowrap;">Ngày bắt đầu</th>
+                        <th style="white-space: nowrap;">Ngày hết hạn</th>
+                        <th style="white-space: nowrap;">Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+               
+                    <tr>
+                        <td colspan="7">Bạn chưa có tin đăng nào. Bấm <a href="https://phongtro123.com/quan-ly/dang-tin-moi.html">vào đây</a> để bắt đầu đăng tin</td>
+                    </tr>
+                     
+                </tbody>
+            </table>
+        </div>
+
+                
+        <!-- end pagination -->
+    </div>
+
+
+<br><br>
+                    <section class="section section-support">
+    <div class="section-content clearfix">
+        <div class="support-bg"></div>
+        <div class="list-support clearfix">
+            <div class="list-support-title">Liên hệ với chúng tôi nếu bạn cần hỗ trợ:</div>
+            <div class="support-item">
+                <span class="support-item-title">Hỗ trợ thanh toán</span>
+                <a rel="nofollow" href="tel:0917686101">Điện thoại: 0917686101</a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0917686101">Zalo: 0917686101</a>
+            </div>
+            <div class="support-item">
+                <span class="support-item-title">Hỗ trợ đăng tin</span>
+                <a rel="nofollow" href="tel:0902657123">Điện thoại: 0902657123</a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0902657123">Zalo: 0902657123</a>
+            </div>
+            <div class="support-item">
+                <span class="support-item-title">Hotline 24/7</span>
+                <a rel="nofollow" href="tel:0917686101">Điện thoại: 0917686101</a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0917686101">Zalo: 0917686101</a>
+            </div>
+            <a class="btn btn-page-contact" rel="nofollow" href="/lien-he">Gửi liên hệ</a>
+        </div> 
+    </div>
+</section>
+
+                    <footer>
+                			<div id="footer">
+                				<div class="container">
+                					<div class="footer_row clearfix">
+                						<div class="footer_col">
+                							<div class="footer_col_header">
+                								<a class="logo" href="https://phongtro123.com">Thuê phòng trọ</a>
+                							</div>
+                							<div class="footer_col_body">
+                								<p style="line-height: 1.3;">Đứng đầu các từ khóa liên quan đến <a href="https://phongtro123.com/cho-thue-phong-tro" title="phòng trọ cho thuê"><strong>phòng trọ cho thuê</strong></a>, <a href="https://phongtro123.com/nha-cho-thue" title="nhà cho thuê"><strong>nhà cho thuê</strong></a>, <a href="https://phongtro123.com/tim-nguoi-o-ghep" title="tìm người ở ghép"><strong>tìm người ở ghép</strong></a></p><p style="line-height: 1.3;"><strong>70.000+</strong> tin bài trên hệ thống, và tiếp tục tăng</p><p style="line-height: 1.3;"><strong>300.000+</strong> khách truy cập và <strong>hơn 2 triệu</strong> lượt xem mỗi tháng</p>
+                							</div>
+                						</div>
+                						<div class="footer_col">
+                							<div class="footer_col_header">Về PHONGTRO123.COM</div>
+                							<div class="footer_col_body">
+                								<ul class="footer_menu">
+                									<li><a href="https://phongtro123.com">Trang chủ</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/gioi-thieu">Giới thiệu</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/quy-che-hoat-dong">Quy chế hoạt động</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/quy-dinh-su-dung">Quy định sử dụng</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/lien-he">Liên hệ</a></li>
+                								</ul>
+                							</div>
+                						</div>
+                						<div class="footer_col">
+                							<div class="footer_col_header">Hỗ trợ khách hàng</div>
+                							<div class="footer_col_body">
+                								<ul class="footer_menu">
+                									<li><a rel="nofollow" href="https://phongtro123.com/cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/huong-dan-su-dung">Hướng dẫn đăng tin</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/bang-gia-dich-vu">Bảng giá dịch vụ</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/quy-dinh-dang-tin">Quy định đăng tin</a></li>
+                									<li><a rel="nofollow" href="https://phongtro123.com/chinh-sach-giai-quyet-khieu-nai">Chính sách giải quyết khiếu nại</a></li>
+                								</ul>
+                							</div>
+                						</div>
+                						<div class="footer_col">
+                							<div class="footer_col_header">Liên hệ với chúng tôi</div>
+                							<div class="footer_col_body mb30">
+                								<a target="_blank" style="display: inline-block; margin-right: 5px;" href="https://www.facebook.com/phongtro123.com.vn/"><img style="border: 1px solid #32599d; border-radius: 50%;" src="https://phongtro123.com/images/icon_facebook.svg" width="30"></a>
+                								<a target="_blank" style="display: inline-block; margin-right: 5px;" href="https://plus.google.com/+Phongtro123chothuenhatro"><img style="border: 1px solid #df3f31; border-radius: 50%;" src="https://phongtro123.com/images/icon_google.svg" width="30"></a>
+                								<a target="_blank" style="display: inline-block; margin-right: 5px;" href="https://zalo.me/phongtro123"><img style="border: 1px solid #00a1dc; border-radius: 50%;" src="https://phongtro123.com/images/icon_zalo.svg" width="30"></a>
+                								<a target="_blank" style="display: inline-block;" href="https://twitter.com/phongtro123"><img style="border: 1px solid #54a3de; border-radius: 50%;" src="https://phongtro123.com/images/icon_twitter.svg" width="30"></a>
+                							</div>
+                							<div class="footer_col_header">Phương thức thanh toán</div>
+                							<div class="footer_col_body">
+                								<span class="bds_icon icon_visa"></span>
+                								<span class="bds_icon icon_mastercard"></span>
+                								<span class="bds_icon icon_jcb"></span>
+                								<span class="bds_icon icon_internet_banking"></span>
+                								<span class="bds_icon icon_momo"></span>
+                								<span class="bds_icon icon_tienmat"></span>
+                							</div>
+                						</div>
+                					</div>
+                					<div class="footer_bottom">
+                						<div class="w980">
+                							<p class="company_name"><strong>CÔNG TY TNHH LBKCORP</strong></p>
+                							<p><strong>Tổng đài CSKH: 0917.686.101</strong></p>
+                							<p>Copyright © 2015 - 2022 Phongtro123.com</p>
+                							<p>Email: cskh.phongtro123@gmail.com | lienhe.phongtro123@gmail.com</p>
+                							<p>Địa chỉ: LD-06.04, Toà nhà Lexington Residence, Số 67 Mai Chí Thọ, Phường An Phú, Quận 2, Tp. Hồ Chí Minh.</p>
+                							<p>Giấy phép đăng ký kinh doanh số 0313588502 do Sở kế hoạch và Đầu tư thành phố Hồ Chí Minh cấp ngày 30 tháng 3 năm 2017.</p>
+                							<center style="display: flex; align-items: center; justify-content: center;">
+                								<a class="bds_icon dkbct" style="display: inline-block; margin: 0 5px;" rel="nofollow" target="_blank" href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=43297"></a>
+                								<a style="display: inline-block; margin: 0 5px;" rel="nofollow" target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=92715b33-c457-422d-95c4-a5453e80e9bf&refurl=https://phongtro123.com/" title="DMCA.com Protection Status" class="dmca-badge"><img src="/images/dmca-badge-w250-2x1-04.png" width="100" alt="DMCA.com Protection Status"></a>
+                								<script async defer src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+                							</center>
+                						</div>
+                					</div>
+                				</div>
+                			</div>
+                		</footer>
+                    </main>
+                    
+                </div>
+            </div>
+
+            
+        </div><!-- end webpage -->
+		
+						
+					<script src="/js/main-dashboard.min.js?v=20221210"></script>
+				
+        
+        <!-- Icons -->
+        <script src="/js/3rd/feather.min.js"></script>
+        <script>feather.replace();</script>
+
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/5d54bf12eb1a6b0be607978c/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+		</script>
+		<!--End of Tawk.to Script-->
+	
+
+    </body>
 </html>
+
