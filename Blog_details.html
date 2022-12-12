@@ -30,20 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="stylesheet" href="Blog_style.css">
     <link rel="stylesheet" href="Blog_style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   
-    <script>
-      $(document).ready(function(){
-        $('.content').click(function(){
-          $('.content').toggleClass("heart-active")
-          $('.text').toggleClass("heart-active")
-          $('.numb').toggleClass("heart-active")
-          $('.heart').toggleClass("heart-active")
-        });
-      });
-    </script>
 </head>
 
 <body>
@@ -137,7 +126,7 @@
                             Trong một vài năm trở lại đây, tỉnh Bình Dương là một trong những tỉnh phía nam có tốc độ phát triển kinh tế đáng kinh ngạc.</p>
                         </br>
                         <center>
-                            <img class="img-fluid"  src="img/Blog_Hinhanh/Blog 1.jpeg" style="margin-left: auto; margin-right: auto;  margin-top: auto; margin-bottom: 3ch;" width="500" height="350"/></center>
+                            <img class="img-fluid"  src="img/Blog_Hinhanh/Blog 1.jpeg" style="margin-left: auto; margin-right: auto;  margin-top: auto; margin-bottom: 3ch;" width="80%"</center>
                         </br>    
                           <i><center><small>Căn hộ cao cấp Legacy Central</small></center></i>
                         </br>
@@ -148,43 +137,31 @@
                             Liên kết vùng của dự án căn hộ Legacy Central
                             
                             Legacy Central là dự án sở hữu vị trí đầy thuận lợi với địa thế cực đẹp. Trước tiên, dự án nằm ngay tại khu vực tiếp giáp với thành phố Hồ Chí Minh. Thông qua hệ thống cơ sở hạ tầng hiện nay đã được đồng bộ với các tuyến huyết mạch: Quốc lộ 1A, Quốc lộ 13, đường ĐT 743, cầu Đồng Nai, bến xe Miền Đông, cầu Phú Long vượt sông Sài Gòn,… Cư dân sẽ không phải mất quá nhiều thời gian để có thể di chuyển vào các quận trung tâm: quận 1, 2, Thủ Đức,…</p>
-                            <div class="heart-btn">
-                                <div class="content">
-                                    <span class="heart"></span>
-                                    <span class="text">Yêu thích</span>
-                                    <span class="numb"></span>
-                                </div>
-                                </div>  
-                            <div class="row g-3 pb-4">
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/hinhdadung/Blog 1.jpeg" style="margin-top: 25%;">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/hinhdadung/Blog 2.jpg">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/hinhdadung/Blog 3.jpg">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/hinhdadung/Blog 3.jpg">
-                            </div>
-                        </div>
-                    </div>
+
+                    </div>                    
                 </div>
             </div>
         </div>
         <!-- About End -->
+     
+    <div class="heart-btn">
+      <div class="content">
+        <span class="heart"></span>
+        <span class="text">Like</span>
+        <span class="numb"></span>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $('.content').click(function(){
+          $('.content').toggleClass("heart-active")
+          $('.text').toggleClass("heart-active")
+          $('.numb').toggleClass("heart-active")
+          $('.heart').toggleClass("heart-active")
+        });
+      });
+    </script>
 
 
         <!-- Team Start -->
@@ -192,7 +169,7 @@
 
 
         <!-- Newsletter Start -->
-        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="row justify-content-center">
                 <div class="col-lg-10 border rounded p-1">
                     <div class="border rounded text-center p-1">
@@ -206,12 +183,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Newsletter Start -->
         
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <!-- <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container pb-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4">
@@ -255,7 +232,13 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div>
+            <form>
+                Bình luận: <input type="text" name="user" /><input type="submit" value="Submit" />
+            </form> 
             </div>
+
             <div class="container">
                 <div class="copyright">
                     <div class="row">
