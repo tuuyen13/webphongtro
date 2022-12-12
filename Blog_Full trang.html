@@ -15,14 +15,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="Blog_style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function(){
+            $('.content').click(function(){
+            $('.content').toggleClass("heart-active")
+            $('.text').toggleClass("heart-active")
+            $('.numb').toggleClass("heart-active")
+            $('.heart').toggleClass("heart-active")
+            });
+        });
+        </script>
+
 </head>
 
 <body>
@@ -81,8 +97,8 @@
                                 <a href="" class="nav-item nav-link">Vận chuyển</a>
                                 <a href="" class="nav-item nav-link">Dọn phòng</a>
                                 <a href="" class="nav-item nav-link">Thanh toán</a>
-                                <a href="blog_text.html" class="nav-item nav-link">Blog</a>
-                                <a href="about.html" class="nav-item nav-link">About us</a>
+                                <a href="blog_text.html" class="nav-item nav-link">Bản tin Moro</a>
+                                <a href="about.html" class="nav-item nav-link">Về chúng tôi</a>
                         
                             </div>
                            
@@ -98,7 +114,7 @@
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">BLOG</h1>
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">BẢN TIN</h1>
                     
                 </div>
             </div>
@@ -128,8 +144,15 @@
                                     <h5 class="Tiêu đề bài đăng">Điểm nổi bật của căn hộ Legacy Central là gì?</h5>                                    
                                 </div>
                                 <div class="Thông tin demo">
+                                    <small class="Lượt xem">5 ngày trước</small>
+                                    &ensp;&ensp;&ensp;
                                     <small class="Lượt xem">167 lượt xem</small>
+                                    &ensp;&ensp;&ensp;
+                                    <small class="Lượt xem">12&ensp;</small>    
+                                    <i class="fa fa-heart" style="font-size:px;color:red"></i>
+
                                 </div>
+                               
                                 <br>
                                 <p class="Thông tin">Khi tìm hiểu về bất kỳ dự án bất động sản nào, yếu tố về vị trí bao giờ cũng đóng vai trò quan trọng bậc nhất... </p>
                                 <div class="Xem chi tiết"><a class="Xem chi tiết" href="">Xem chi tiết</a></div>
