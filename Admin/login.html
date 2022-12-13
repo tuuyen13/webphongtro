@@ -2,56 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login</title>
-    <link rel="shortcut icon" href="/images/logo_real.png" type="image/png" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="css/loginadmin.css" />
+    <script
+      src="https://kit.fontawesome.com/682f180637.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="page-wrap">
-      <div class="left-panel">
-        <div class="illustration">
-          <img
-            src="/images/illustration.png"
-            alt="Illustration"
-            class="image"
-          />
-        </div>
-        <h2>Shopping made easy</h2>
+    <section >
+      <!--Bắt Đầu Phần Hình Ảnh-->
+      <div class="img-bg">
+          <img src="images/logoadmin.jpg" >
       </div>
+      <!--Kết Thúc Phần Hình Ảnh-->
+      <!--Bắt Đầu Phần Nội Dung-->
+      <div class="noi-dung">
+          <div class="form1">
+            <h1 style="margin-bottom: 15px; color: #993B2A; font-family: 'Roboto', sans-serif;">Xin chào Admin MORO,</h1>
+              <h2>Đăng nhập</h2>
+              <form id = "login">
 
-      <div class="right-panel">
-        <h1>
-          <strong>Xin chào,</strong>
-          Admin
-        </h1>
-        <form class="animated-form">
-          <h3>Login to your account</h3>
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" class="username" />
+                  <div class="input-form">
+                      <span>Email hoặc số điện thoại</span>
+                      <input type="text" id="email" required>
+                  </div>
+
+                  <div class="input-form">
+                      <span>Mật Khẩu</span>
+                      <input type="password" id="password" required>
+                  </div>
+
+                  <div class="nho-dang-nhap">
+                      <label><input type="checkbox" name=""> Lưu thông tin đăng nhập</label>
+                  </div>
+
+                  <div class="input-form">
+                      <input type="button" value="Đăng Nhập" onclick="openPopup()">
+                  </div>                  
+                      
+                </form>
+
+                
+
           </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" class="password" />
-          </div>
-          <div class="form-group flex-end">
-            <a href="index.html" class="button">LOGIN</a>
-          </div>
-          <div class="lost-password">
-            <a href="#" class="link">Forgot your password?</a>
-          </div>
-        </form>
       </div>
-    </div>
+      <!--Kết Thúc Phần Nội Dung-->
+  </section>
+  <div class="popup" id="popup"></div>
 
-    <!-- APP JS -->
-    <script src="./js/login.js"></script>
+<script>
+let popup = document.getElementById("popup");
+function openPopup() {
+
+if (document.getElementById("email").value == "") {
+  alert("Vui lòng nhập Email hoặc số điện thoại");
+  document.getElementById("email").focus();
+  return;
+}
+
+if (document.getElementById("password").value == "") {
+  alert("Vui lòng nhập mật khẩu!");
+  document.getElementById("password").focus();
+  return;
+}
+
+popup.classList.add("open-popup");
+        clearform();
+      }
+
+      function clearform() {
+        document.getElementById("login").reset();
+        // hiện thị thông báo đăng nhập thành công
+        alert("Đăng nhập thành công");
+        // chuyển qua trang chủ
+        window.location.href = "Admin.html";
+      }
+    </script>
   </body>
 </html>
