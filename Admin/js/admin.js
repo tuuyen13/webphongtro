@@ -22,7 +22,7 @@ document.querySelectorAll(".sidebar-submenu").forEach((e) => {
 });
 
 let category_options = {
-  series: [44, 55, 41, 17],
+  series: [40, 30, 20, 10],
   labels: ["Cho thuê", "Ở ghép", "Vận chuyển", "Dọn phòng"],
   chart: {
     type: "donut",
@@ -39,12 +39,12 @@ category_chart.render();
 let customer_options = {
   series: [
     {
-      name: "Store Customers",
-      data: [40, 70, 20, 90, 36, 80, 30, 91, 60],
+      name: "Người dùng mới",
+      data: [40, 70, 20, 90, 36, 80],
     },
     {
-      name: "Online Customers",
-      data: [20, 30, 10, 20, 16, 40, 20, 51, 10],
+      name: "Người dùng quay lại",
+      data: [20, 30, 10, 20, 16, 40],
     },
   ],
   colors: ["#6ab04c", "#2980b9"],
@@ -59,7 +59,7 @@ let customer_options = {
     curve: "smooth",
   },
   xaxis: {
-    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+    categories: ["1", "2", "3", "4", "5", "6"],
   },
   legend: {
     position: "top",
@@ -82,6 +82,44 @@ setDarkChart = (dark) => {
   customer_chart.updateOptions(theme);
   category_chart.updateOptions(theme);
 };
+//DRaw bar chart
+let customer_options1 = {
+  series: [
+    {
+      name: "Doanh thu từ gói dịch vụ",
+      data: [40, 70, 20, 90, 36, 80],
+    },
+    {
+      name: "Doanh thu từ quảng cáo",
+      data: [20, 30, 10, 20, 16, 40],
+    },
+  ],
+  colors: ["#6ab04c", "#2980b9"],
+  chart: {
+    height: 350,
+    type: "bar",
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    curve: "smooth",
+  },
+  xaxis: {
+    categories: ["1", "2", "3", "4", "5", "6"],
+  },
+  legend: {
+    position: "top",
+  },
+};
+
+let customer_chart1 = new ApexCharts(
+  document.querySelector("#customer-chart1"),
+  customer_options1
+);
+customer_chart1.render();
+
+
 
 // DARK MODE TOGGLE
 let darkmode_toggle = document.querySelector("#darkmode-toggle");
@@ -105,3 +143,4 @@ document.querySelector("#sidebar-close").onclick = () => {
   sidebar.classList.toggle("active");
   overlay.classList.toggle("active");
 };
+

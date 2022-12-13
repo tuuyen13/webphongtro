@@ -27,8 +27,9 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-     <!-- price picker slider -->
-     <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    
+      <!-- link fontawesome -->
+    <script src="https://kit.fontawesome.com/71fcac199f.js" crossorigin="anonymous"></script>
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -59,17 +60,16 @@
                
                     <div class="row gx-0 bg-white d-none d-lg-flex">
                         <div class="col-lg-7 px-5 text-start">
-                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                                <!-- <i class="fa fa-envelope text-primary me-2"></i> -->
-                                <!-- <p class="mb-0">Chào mừng bạn đến với MORO </p> -->
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">                            
                             </div>
                             
                         </div>
                         <div class="col-lg-5 px-5 text-end">
                             <div class="d-inline-flex align-items-center py-2">
-                                <a class="me-3" href="register.html">Đăng ký</a>
-                                <a class="me-3" href="login.html">Đăng nhập</a>
-                                <a class="me-3" href="Popupdangbai.html">Đăng tin</a>                       
+                                <a class="me-31" href="register.html">Đăng ký</a>
+                                <a class="me-31" href="login.html">Đăng nhập</a>
+                                <a class="me-31" href="Popupdangbai.html">Đăng tin  <i class="fa-sharp fa-solid fa-circle-plus"></i> </a>     
+                                                
 
                                
                             </div>
@@ -165,52 +165,8 @@
         <!-- Carousel End -->
 
 
-        <!-- Booking Start
-        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="bg-white shadow" style="padding: 35px;">
-                    <div class="row g-2">
-                        <div class="col-md-10">
-                            <div class="row g-2">
-                                <div class="col-md-3">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Adult</option>
-                                        <option value="1">Adult 1</option>
-                                        <option value="2">Adult 2</option>
-                                        <option value="3">Adult 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Child</option>
-                                        <option value="1">Child 1</option>
-                                        <option value="2">Child 2</option>
-                                        <option value="3">Child 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Booking End -->
         <!-- Filter Start -->
-        <!-- <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="bg-white shadow" style="padding: 35px;">
                     <div class="row g-2">
@@ -223,7 +179,6 @@
                                         <label for="location">Địa điểm</label>
                                     </div>
                                 </div>
-
                                 <div class="col-md-3">
                                     <select class="form-select">
                                         <option selected>Loại hình nhà ở</option>
@@ -264,98 +219,7 @@
                         </div>
                         <div class="col-md-2">
                             <button class="btn btn-primary w-100">Tìm kiếm</button>
-                        </div> -->
-
-                        
-                        <!-- Advance Search -->
-                        Ư<body class="aa-price-range">  
-                            <!-- Pre Loader -->
-                            <div id="aa-preloader-area">
-                              <div class="pulse"></div>
-                            </div>
-                        <section id="aa-advance-search">
-                            <div class="container">
-                            <div class="aa-advance-search-area">
-                                <div class="form">
-                                <div class="aa-advance-search-top">
-                                    <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="aa-single-advance-search">
-                                        <input type="text" placeholder="Type Your Location">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="aa-single-advance-search">
-                                        <select>
-                                        <option value="0" selected>Category</option>
-                                            <option value="1">Flat</option>
-                                            <option value="2">Land</option>
-                                            <option value="3">Plot</option>
-                                            <option value="4">Commercial</option>
-                                        </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="aa-single-advance-search">
-                                        <select>
-                                            <option value="0" selected>Type</option>
-                                            <option value="1">Flat</option>
-                                            <option value="2">Land</option>
-                                            <option value="3">Plot</option>
-                                            <option value="4">Commercial</option>
-                                        </select>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="aa-single-advance-search">
-                                        <select>
-                                            <option value="0" selected>Type</option>
-                                            <option value="1">Flat</option>
-                                            <option value="2">Land</option>
-                                            <option value="3">Plot</option>
-                                            <option value="4">Commercial</option>
-                                        </select>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="aa-single-advance-search">
-                                        <input class="aa-search-btn" type="submit" value="Search">
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="aa-advance-search-bottom">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                    <div class="aa-single-filter-search">
-                                        <span>AREA (SQ)</span>
-                                        <span>FROM</span>
-                                        <span id="skip-value-lower" class="example-val">30.00</span>
-                                        <span>TO</span>
-                                        <span id="skip-value-upper" class="example-val">100.00</span>
-                                        <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                                        </div>                  
-                                    </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                    <div class="aa-single-filter-search">
-                                        <span>PRICE ($)</span>
-                                        <span>FROM</span>
-                                        <span id="skip-value-lower2" class="example-val">30.00</span>
-                                        <span>TO</span>
-                                        <span id="skip-value-upper2" class="example-val">100.00</span>
-                                        <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                                        </div>      
-                                    </div>
-                                    </div>
-                                </div>  
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </section>
-                        <!-- / Advance Search -->
-
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,7 +238,7 @@
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                        <i class="fa-solid fa-house fa-2x" style="color: #FEA116;"></i>
                                         <h2 class="mb-1" data-toggle="counter-up">1000</h2>
                                         <p class="mb-0">Bài đăng</p>
                                     </div>
@@ -661,55 +525,66 @@
                     <h1 class="mb-5">MORO cung cấp <span class="text-primary text-uppercase">các dịch vụ</span></h1>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="service-item rounded" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                    <i class="fa-solid fa-house fa-2x" style="color: #FEA116;"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Tìm kiếm phòng trọ</h5>
                             <p class="text-body mb-0">Dễ dàng, an tâm hơn và lựa chọn được một phòng trọ - căn hộ phù hợp với các bài đăng đã được kiểm duyệt</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.2s">
                         <a class="service-item rounded" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                    <i class="fa-solid fa-user-group fa-2x" style="color: #FEA116;"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Tìm người ở ghép</h5>
                             <p class="text-body mb-0">Tiết kiệm thời gian tìm bạn ở ghép khi có thể kết nối với những người cùng sở thích, hoàn cảnh, vị trí</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="service-item rounded" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
+                                    <i class="fa-solid fa-truck fa-2x" style="color: #FEA116;"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Tìm đơn vị vận chuyển</h5>
                             <p class="text-body mb-0">Bạn không còn lo lắng về việc vận chuyển trọ đến nơi ở mới vì Moro cung cấp dịch vụ vận chuyển đồ cho người thuê trọ</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s" >           
+                    <div class="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.4s" >           
                         <a class="service-item rounded" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
+                                    <i class="fa-sharp fa-solid fa-broom fa-2x" style="color: #FEA116;"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Tìm đơn vị dọn phòng</h5>
                             <p class="text-body mb-0">Dịch vụ dọn phòng giúp bạn thuê người dọn phòng một cách dễ dàng, thuận tiện nhất</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="service-item rounded" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+                                    <i class="fa-sharp fa-solid fa-newspaper fa-2x" style="color: #FEA116;"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Blog</h5>
+                            <p class="text-body mb-0">MoroBlogs cập nhật những bài viết, review, chia sẻ cho người dùng về dịch vụ chỗ ở, các lưu ý khi chọn phòng trọ, ...v.v đem đến cho khách hàng nguồn thông tin, tham khảo hữu ích.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa-sharp fa-solid fa-newspaper fa-2x" style="color: #FEA116;"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Blog</h5>
@@ -771,7 +646,7 @@
                 <div class="col-lg-10 border rounded p-1">
                     <div class="border rounded text-center p-1">
                         <div class="bg-white rounded text-center p-5">
-                            <h4 class="mb-4">Thắc mắc của bạn<span class="text-primary text-uppercase"> Hỗ trợ giải đáp</span></h4>
+                            <h4 class="mb-4">Thắc mắc của bạn<span class="text-primary text-uppercase"> - Hỗ trợ giải đáp</span></h4>
                             <div class="position-relative mx-auto" style="max-width: 400px;">
                                 <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Câu hỏi của bạn">
                                 <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Gửi</button>
