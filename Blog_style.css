@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 .heart-btn{
-  position: relative;
-  top: 40px; left: 40px;
+  position: absolute;
+  /* top: 400%; */
+  /* right: 20%; */
+  /* right: 300px; */
+  
+  transform: translate(0%,0%)
+  
 }
 .content{
   padding: 13px 16px;
@@ -26,7 +31,7 @@
   transform: translate(-50%,-50%);
 }
 .text{
-  font-size: 21px;
+  font-size: 12px;
   margin-left: 30px;
   color: grey;
   font-family: 'Montserrat',sans-serif;
@@ -57,8 +62,4 @@
   100%{
     background-position: right;
   }
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
 }
