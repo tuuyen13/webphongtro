@@ -111,7 +111,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(15, 23, 43, .7);
     z-index: 1;
 }
 
@@ -1050,7 +1049,7 @@
     text-align: center;
     padding: 5px;
     font-style: bold;
-    color:  #0F172B;
+    color:  #aebee7;
     background-color:#FEA116;
   }
   td {
@@ -1058,7 +1057,7 @@
     text-align: center;
     padding: 5px;
     font-style: bold, normal;
-    color: #000000, #0F172B;
+    color: #000000, #aebee7;
   }
 /* ZAng ends */
 /* ServiceMOtelRoom */
