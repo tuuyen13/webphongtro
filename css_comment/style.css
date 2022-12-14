@@ -1,5 +1,5 @@
 .container {
-	max-width: 640px;
+	max-width: 3000px;
 	margin: 30px auto;
 	background: #fff;
 	border-radius: 8px;
@@ -7,7 +7,7 @@
 }
 
 .margin-bottom {
-	150px;
+		500px;
 }
 
 .comment {
@@ -23,7 +23,7 @@
 }
 
 textarea {
-	width: 100%;
+	width: 200%;
 	border: none;
 	background: #E8E8E8;
 	padding: 5px 10px;
@@ -39,6 +39,7 @@ button.primaryContained {
 	color: #fff;
 	padding: 10px 10px;
 	border: none;
+	margin-left: 200px;
 	margin-top: 0px;
 	cursor: pointer;
 	text-transform: uppercase;
