@@ -20,16 +20,14 @@ article, header, section, aside, details, figcaption, figure, footer, header, hg
     display: block;
 }
 body {
-    background:#cdd4ae none repeat scroll 0 0;
     color: #222;
-    font-size: 100%;
-    line-height: 24px;
+    font-size: 80%;
     margin: 0;
 	padding:0;
-	font-family: "Raleway",sans-serif;
+	font-family: "montserrat",sans-serif;
 }
 a{
-	font-family: "Helvetica",sans-serif;;
+	font-family: "montserrat",sans-serif;
 	text-decoration: none;
 	outline: none;
 }

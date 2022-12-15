@@ -26,11 +26,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="Blog_style.css">
+    <link rel="stylesheet" href="Blog_style1.css">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- link fontawesome -->
-    <script src="https://kit.fontawesome.com/71fcac199f.js" crossorigin="anonymous"></script>
     
     <!-- Heart -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -38,24 +35,16 @@
     <style type="text/css">
       .table-1, .th-1, .tr-1 {
         
-          border: hidden;
-          border-radius: 10px;    
+          border: hidden; 
           text-align:left;
-          background-color: whitesmoke;
 
       }
-       
-      .td-1, .tr-1
-      { text-align:left;
-        border-top:1px solid rgb(246, 130, 36);
-        border-bottom:1px solid rgb(224, 114, 24); 
-      }
-
-     .table-1 {
-      border-collapse:collapse;
-      }
+        
+        .div-3{
+            text-align: left;
+        }
       .tr-1:hover{
-      background-color:rgb(245, 239, 239);
+      background-color:rgb(199, 194, 194);
       cursor:pointer;     
     }
      
@@ -73,39 +62,56 @@
         <!-- Spinner End -->
 
         <!-- Header Start -->
-        <div class="container-fluid nav-bar bg-transparent" style="background-color: #0F172B;">
-          <nav class="navbar navbar-expand-lg  navbar-light py-0 px-4" style="background-color: #0F172B;" >
-              <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                  <div class="icon p-2 me-2">
-                      <img class="img-fluid" src="img/index_img/Logo.png" alt="Icon" style="width: 100px; height: 100px;">
-                  </div>
-                  <h1 class="m-0 text-primary">MORO</h1>
-              </a>
-              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <div class="navbar-nav ms-auto">
-                      <a href="index.html" class="nav-item nav-link">Trang chủ</a>
-                      <a href="RentHome.html" class="nav-item nav-link">Cho thuê</a>                            
-                      <a href="Roommate.html" class="nav-item nav-link" >Ở ghép</a>
-                      <a href="delivery_page.html" class="nav-item nav-link active">Vận chuyển</a>
-                      <a href="cleaningservice.html" class="nav-item nav-link" >Dọn phòng</a>
-                      <a href="ServiceMotelRoom.html" class="nav-item nav-link">Dịch vụ</a>
-                      <a href="Blog_Full trang.html" class="nav-item nav-link">Bản tin</a>
-                      <a href="Về chúng tôi.html" class="nav-item nav-link" >Về Moro</a> 
-                  </div>
-                  <a href="Popupdangbai.html" class="btn btn-primary px-3 d-none d-lg-flex">Đăng tin<i class="fa-sharp fa-solid fa-circle-plus" style="margin-top: 5px;margin-left: 7px;"></i></a>
-                  <a href="profile.html"><i class="fa-regular fa-circle-user  fa-2x" style="color: #FEA116; margin-left: 20px;"></i></i></a>
-              </div>
-          </nav>
-      </div>
-      <!-- Header End -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 class="m-0 text-primary text-uppercase">MORO</h1>
+                    </a>
+                </div>
+                <div class="col-lg-9">                    
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase">MORO</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Cho thuê</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="" class="dropdown-item">Căn hộ</a>
+                                        <a href="" class="dropdown-item">Phòng trọ</a>
+                                        <a href="" class="dropdown-item">Mặt bằng</a>
+                                    </div>
+                                </div>
+
+                                <a href="" class="nav-item nav-link">Ở ghép</a>
+                                <a href="" class="nav-item nav-link">Vận chuyển</a>
+                                <a href="" class="nav-item nav-link">Dọn phòng</a>
+                                <a href="" class="nav-item nav-link">Thanh toán</a>
+                                <a href="" class="nav-item nav-link">Blog</a>
+                                <a href="about.html" class="nav-item nav-link">About us</a>
+                        
+                            </div>
+                           
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+            <!-- Hot Room start -->
 
               <!-- Start Properties  -->
   <section id="aa-properties">
     <div class="container">
       <div class="row">
+     
         <div class="col-md-7">
           <div class="aa-properties-content">            
             <!-- Start properties content body -->
@@ -117,9 +123,10 @@
                <img src="img/room-3.jpg" alt="img"> -->
              </div>
              <div class="aa-properties-info mb-0">
+             </br>
                <h2>Chuyển nhà 24h | Dịch vụ dọn phòng thân thiện với sinh viên</h2>
                <span class="aa-location"><div class="me-2 mb-3 fa fa-map-marker" ></div>Toàn quốc</span>
-               <p>Chuyển nhà trọ sinh viên thành phố Hồ Chí Minh sẽ tiện lợi, an toàn và tiết kiệm chi phí hơn nhiều với dịch vụ chuyển nhà trọ trọn gói giá rẻ của Chuyển Nhà 24h. Việc chuyển nhà trọ của bạn đã có đội ngũ nhân viên chuyên nghiệp đảm nhận, vận chuyển an toàn bằng xe tải với giá cả ưu đãi nhất cho sinh viên, giúp bạn nhanh chóng ổn định chỗ ở để yên tâm học tập.</p>
+               <p style="text-align:justify">Chuyển nhà trọ sinh viên thành phố Hồ Chí Minh sẽ tiện lợi, an toàn và tiết kiệm chi phí hơn nhiều với dịch vụ chuyển nhà trọ trọn gói giá rẻ của Chuyển Nhà 24h. Việc chuyển nhà trọ của bạn đã có đội ngũ nhân viên chuyên nghiệp đảm nhận, vận chuyển an toàn bằng xe tải với giá cả ưu đãi nhất cho sinh viên, giúp bạn nhanh chóng ổn định chỗ ở để yên tâm học tập.</p>
                     <!-- doạn 1 -->
                 <h4>Chúng tôi mang đến lợi ích gì cho bạn?</h4>
                 <ul>
@@ -223,6 +230,7 @@
                    
             
             <!-- thông tin liên hệ -->
+                </br>
                 <h3>Thông tin liên hệ</h3>
 
               <div class="aa-properties-single-sidebar">
@@ -249,7 +257,7 @@
                             <span class="numb"></span>
                             </div>
                         </div>
-
+                      </aside>
                         <script>
                             $(document).ready(function(){
                             $('.content').click(function(){
@@ -264,146 +272,64 @@
                         </div>
                     </div>
             </div> 
+            </div>
             <!-- Start Single properties sidebar -->
             <div class="aa-properties-single-sidebar">
               <div class="aa-properties-info">
-              <h3>Các dịch vụ khác</h3>
-             <!-- Nearby properties -->
+        </br> 
+        <h3>Các dịch vụ khác</h3>    
         <table class="table-1">
-          <tr class="tr-1">
-            <td class="td-1">
-             <div class="media">            
-                <div class="media-left">
+          <!-- dịch vụ 1 -->
+          
+          
+             <tr class="tr-1">               
+                 <td class="td-1">           
+                 <div>                
+                     <hr>
+                     <div class="div-3">
+                         <div class="d-flex align-items-center">
+                             <img class="img-fluid flex-shrink-0 rounded" src="img/delivery-2.png" style="width: 150px; height: 150px;">
+                             <div class="ps-3">
+                                <h4 class="media-heading"><a href="#">Thành Hưng house</a></h4>
+                                 <i><h5>16.000 VNĐ/Km</h5></i>
+                                 <p class="left" margin-left="10px">Dịch vụ chuyển nhà trọn gói sinh viên của Taxi tiện lợi.</p>
+                             </div>
+                         </div>
+                    
+                     </div>
+                 </div>
+                
+                 </div>
+                 <hr>
+                 </td>
+             </tr>  
+             <!-- dịch vụ 2-->
+             <tr class="tr-1">  
+              <td class="td-1">
+              
+              <div>
+                  <hr>
+                  <div class="div-3">
+                      <div class="d-flex align-items-center">
+                          <img class="img-fluid flex-shrink-0 rounded" src="img/delivery-5.png" style="width: 150px; height: 150px;">
+                          <div class="ps-3">
+                             <h4 class="media-heading"><a href="#">Việt Moving</a></h4>
+                              <i><h5>30.000 VNĐ/Km</h5></i>
+                              <p class="left" margin-left="10px">Vận chuyển nhanh chóng, đóng gói đồ đạc đảm bảo, mang đến sự an toàn tuyệt đối.</p>
+                          </div>
+                      </div>
                  
-                  <a href="#">
-                    <img class="media-object" src="img/delivery-2.png" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">Thành Hưng house</a></h4>
-                  <p>Dịch vụ chuyển nhà trọn gói sinh viên của Taxi tiện lợi.</p>                
-                  <span>16.000 VNĐ/Km</span>
-                </div>  
-            </div>
-          </td>
-          </tr>   
-
-         
-
-          </tr class="tr-1">
-            <td class="td-1"> 
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/delivery-5.png" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">Việt Moving</a></h4>
-                  <p>Vận chuyển nhanh chóng, đóng gói đồ đạc đảm bảo, mang đến sự an toàn tuyệt đối.</p>                
-                  <span>30.000 VNĐ/Km</span>
-                </div>              
+                  </div>
               </div>
-            </td>  
-          </tr>
-        </table>  
-
-        </div>
-      </div>
-    </div>
+             
+              </div>
+              <hr>
+              </td>
+          </tr>      
+                                             
+         </table>
+     
   </section>
-  <!-- / Properties  --> 
-            
-            <!-- Start Properties  -->
-  
-            <!-- Start Single properties sidebar -->
-            <!-- <div class="aa-properties-single-sidebar">
-              <h3>Populer Properties</h3>
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/item/1.jpg" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
-                  <span>$65000</span>
-                </div>              
-              </div>
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/item/1.jpg" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
-                  <span>$65000</span>
-                </div>              
-              </div>
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/item/1.jpg" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
-                  <span>$65000</span>
-                </div>              
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- / Properties  -->
-
-                <!-- <div class="container-xxl py-5">
-                    <div class="container">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="room-item shadow rounded overflow-hidden">
-                                    <div class="position-relative">
-                                        <img class="img-fluid" src="img/room-1.jpg" alt="">
-                                        <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
-                                    </div>
-                                    <div class="p-4 mt-2">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <h5 class="mb-0">Junior Suite</h5>
-                                            <div class="ps-2">
-                                                <small class="fa fa-star text-primary"></small>
-                                                <small class="fa fa-star text-primary"></small>
-                                                <small class="fa fa-star text-primary"></small>
-                                                <small class="fa fa-star text-primary"></small>
-                                                <small class="fa fa-star text-primary"></small>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex mb-3">
-                                            <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                            <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                            <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                                        </div>
-                                        <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                                        <div class="d-flex justify-content-between">
-                                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Xem chi tiết</a>
-                                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Liên hệ</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    <!-- Hot Room End -->
-
-
     </div>
 </div>
 <!-- Booking End -->
