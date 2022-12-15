@@ -27,7 +27,7 @@ let category_options = {
   chart: {
     type: "donut",
   },
-  colors: ["#6ab04c", "#2980b9", "#f39c12", "#d35400"],
+  colors: ["#DF4036", "#5FE377", "#F147B6", "#F1F147"],
 };
 
 let category_chart = new ApexCharts(
@@ -47,7 +47,7 @@ let customer_options = {
       data: [20, 30, 10, 20, 16, 40],
     },
   ],
-  colors: ["#6ab04c", "#2980b9"],
+  colors: ["#F1AB47", "#8FF147"],
   chart: {
     height: 350,
     type: "line",
@@ -94,7 +94,7 @@ let customer_options1 = {
       data: [20, 30, 10, 20, 16, 40],
     },
   ],
-  colors: ["#6ab04c", "#2980b9"],
+  colors: ["#1BCDD5", "#EA5CC8"],
   chart: {
     height: 350,
     type: "bar",
