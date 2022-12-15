@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "title": "Clean 4 U",
+        "price": "150.000đ/tiếng",
+        "shortDes":"Chúng tôi cung cấp dịch vụ dọn phòng giá rẻ.",
+        "star":5,
+        "info":"",
+        "contact": [ "090 123 4567"],
+        "image1":"img/cleaningservice_img/clean-1.jpeg"
+       },
+    {
+        "id": 2,
+        "title": "Ánh Dương Xanh",
+        "price": "100.000đ/tiếng",
+        "shortDes":"Chúng tôi cung cấp dịch vụ dọn phòng, liên hệ ngay để đặt lịch.",
+        "star":5,
+        "info":"",
+        "contact": [ "090 123 4267"],
+        "image1":"img/cleaningservice_img/clean-2.png"
+    },
+    {
+        "id": 3,
+        "title": "Tú Cleaning",
+        "price": "50.000đ/tiếng",
+        "shortDes":"Doanh nghiệp cung cấp dịch vụ hàng đầu Việt Nam.",
+        "star":5,
+        "info":"",
+        "contact": [ "091 123 4567"],
+        "image1":"img/cleaningservice_img/clean-3.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "Bảo Anh",
+        "price": "120.000đ/tiếng",
+        "shortDes":"Chúng tôi mang đến cho khách hàng sự hài lòng tuyệt vời.",
+        "star":5,
+        "info":"",
+        "contact": [ "090 113 4567"],
+        "image1":"img/cleaningservice_img/clean-5.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "SWEEPZ",
+        "price": "130.000đ/tiếng",
+        "shortDes":"Hơn 20 năm kinh nghiệm trong lĩnh vực dịch vụ dọn phòng.",
+        "star":3,
+        "info":"",
+        "contact": [ "090 123 4567"],
+        "image1":"img/cleaningservice_img/clean-6.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "KClean",
+        "price": "150.000đ/tiếng",
+        "shortDes":"Doanh nghiệp tiên phong trong lĩnh vực dọn phòng.",
+        "star":4,
+        "info":"",
+        "contact": [ "090 153 4567"],
+        "image1":"img/cleaningservice_img/clean-4.jpeg"
+    }
+]
+
+

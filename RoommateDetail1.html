@@ -29,6 +29,10 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/71fcac199f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/682f180637.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="Blog_style.css">
     <link rel="stylesheet" href="Blog_style.css">
 
@@ -46,56 +50,35 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-dark px-0">
-          <div class="row gx-0">
-              <div class="col-lg-3 bg-dark d-none d-lg-block">
-                  <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                      <img src="img/index_img/Logo.png" alt="logo" class="img-fluid" style="width: 100px; height: 100px;">
-
-                      <h1 class="m-0 text-primary text-uppercase">MORO</h1>
-                  </a>
-              </div>
-              <div class="col-lg-9">  
-                  <div class="row gx-0 bg-white d-none d-lg-flex">
-                      <div class="col-lg-7 px-5 text-start">
-                          <div class="h-100 d-inline-flex align-items-center py-2 me-4">                            
-                          </div>
-                          
-                      </div>
-                      <div class="col-lg-5 px-5 text-end">
-                          <div class="d-inline-flex align-items-center py-2">
-                              <a href="profile.html"><i class="fa-solid fa-user fa-2x" style="color: #FEA116; margin-right: 10px;"></i></a>
-                              <a class="me-31" href="Popupdangbai.html">Đăng tin  <i class="fa-sharp fa-solid fa-circle-plus"></i> </a>                                  
-                          </div>
-                      </div>
-                  </div>                                
-                  <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                      <a href="index.html" class="navbar-brand d-block d-lg-none">
-                          <h1 class="m-0 text-primary text-uppercase">MORO</h1>
-                      </a>
-                      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                          <div class="navbar-nav mr-auto py-0">
-                              <a href="index.html" class="nav-item nav-link">Trang chủ</a>
-                              <a href="#" class="nav-item nav-link">Cho thuê</a>                            
-                              <a href="Roommate.html" class="nav-item nav-link active">Ở ghép</a>
-                              <a href="delivery_page.html" class="nav-item nav-link">Vận chuyển</a>
-                              <a href="cleaningservice.html" class="nav-item nav-link">Dọn phòng</a>
-                              <a href="ServiceMotelRoom.html" class="nav-item nav-link">Gói dịch vụ</a>
-                              <a href="Blog_Full trang.html" class="nav-item nav-link">Bản tin</a>
-                              <a href="Về chúng tôi.html" class="nav-item nav-link">Về chúng tôi</a>                        
-                          </div>                           
-                      </div>
-                  </nav>
-              </div>
-          </div>
-      </div>
-      <!-- Header End -->
-
-            <!-- Hot Room start -->
+       <!-- Header Start -->
+       <div class="container-fluid nav-bar bg-transparent" style="background-color: #0F172B;">
+        <nav class="navbar navbar-expand-lg  navbar-light py-0 px-4" style="background-color: #0F172B;" >
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                <div class="icon p-2 me-2">
+                    <img class="img-fluid" src="img/index_img/Logo.png" alt="Icon" style="width: 100px; height: 100px;">
+                </div>
+                <h1 class="m-0 text-primary">MORO</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                    <a href="RentHome.html" class="nav-item nav-link">Cho thuê</a>                            
+                    <a href="Roommate.html" class="nav-item nav-link active" >Ở ghép</a>
+                    <a href="delivery_page.html" class="nav-item nav-link">Vận chuyển</a>
+                    <a href="cleaningservice.html" class="nav-item nav-link" >Dọn phòng</a>
+                    <a href="ServiceMotelRoom.html" class="nav-item nav-link">Dịch vụ</a>
+                    <a href="Blog_Full trang.html" class="nav-item nav-link">Bản tin</a>
+                    <a href="Về chúng tôi.html" class="nav-item nav-link" >Về Moro</a> 
+                </div>
+                <a href="Popupdangbai.html" class="btn btn-primary px-3 d-none d-lg-flex">Đăng tin<i class="fa-sharp fa-solid fa-circle-plus" style="margin-top: 5px;margin-left: 7px;"></i></a>
+                <a href="profile.html"><i class="fa-regular fa-circle-user  fa-2x" style="color: #FEA116; margin-left: 20px;"></i></i></a>
+            </div>
+        </nav>
+    </div>
+    <!-- Header End -->
 
               <!-- Start Properties  -->
   <section id="aa-properties">
@@ -108,7 +91,7 @@
              <div class="aa-properties-details-img">
                
               <!-- Carousel Start -->
-        <div class="container-fluid p-0 mb-5">
+              <div class="aa-properties-details-img">
           <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -137,15 +120,15 @@
           </div>
       </div>
       <!-- Carousel End -->
-             </div>
-             <div class="aa-properties-info">
-               <h2>Khải Hưng</h2>
-               <div class="ps-2">
-                <h6 class="mb-0">Nam - 20 tuổi</h6>
-            </div>
-               <span class="aa-price">2.3 triệu/tháng</span>
-               <p>Địa chỉ: 18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh</p>
-               <p>Mình đến từ Dĩ An, Bình Dương. Đang cần tìm bạn ở cùng phòng ngăn nắp, sạch sẽ và hòa đồng. Phòng có bếp nấu ăn nếu bạn muốn nấu. Những căn phòng đẹp lung linh chuẩn 2 sao, đa dạng tiện ích và được sinh hoạt trong không gian ấm cúng như chính ở nhà.
+    </div>
+             <div class="aa-properties-info mb-0">
+               <h1 style="color: #FEA116; margin-top: 15px;">Khải Hưng</h1>
+              
+                <h5><i class="fa-solid fa-venus-mars", style="color: #FEA116;"></i>&nbsp; Nam - 20 tuổi</h5>
+            
+               <h5><i class="fa-solid fa-money-bill", style="color: #FEA116;"></i> &nbsp; 2.3 triệu/tháng</h5>
+               <h5><i class="fa-solid fa-location-dot", style="color: #FEA116;"></i> &nbsp; 18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh</h5>
+               <p style="text-align: justify;">Mình đến từ Dĩ An, Bình Dương. Đang cần tìm bạn ở cùng phòng ngăn nắp, sạch sẽ và hòa đồng. Phòng có bếp nấu ăn nếu bạn muốn nấu. Những căn phòng đẹp lung linh chuẩn 2 sao, đa dạng tiện ích và được sinh hoạt trong không gian ấm cúng như chính ở nhà.
 
                 Nhằm hỗ trợ tối ưu cho các sinh viên và người đi làm, hệ thống KTX Q7 chúng mình miễn phí toàn bộ các chi phí (cam kết 100% không phát sinh), các bạn chỉ cần vào ở với mức giá cố định 700.000 VNĐ/ tháng thôi nè!
                 
@@ -156,14 +139,10 @@
                 - Giá cố định trọn gói, miễn phí tiền điện nước và các chi phí bổ sung khác.
                 
                 - Có sân phơi quần áo rộng kèm hệ thống phơi thông minh.</p>
-               <p>Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. </p>
-               <p>Tiện ích chung tại ký túc xá:
+               <p style="text-align: justify;">Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. </p>
+               <p style="text-align: justify;">Tiện ích chung tại ký túc xá:
                 
-                - Phòng ở mới tinh tươm, được decor siêu xinh và đầy đủ đồ dùng thiết yếu.
-                
-                - Trang bị máy lạnh inventer, wifi tốc độ cao ở mỗi tầng.
-                
-                - Có nhà vệ sinh riêng, được dọn dẹp vệ sinh phòng hằng ng.</p>      
+                - Phòng ở mới tinh tươm, được decor siêu xinh và đầy đủ đồ dùng thiết yếu. Trang bị máy lạnh inventer, wifi tốc độ cao ở mỗi tầng. Có nhà vệ sinh riêng, được dọn dẹp vệ sinh phòng hằng ng.</p>      
              </div>
 
              <section class="section post-map"><div class="section-header"><h3 >Bản đồ</h3>
@@ -184,6 +163,7 @@
             <!-- Start Single properties sidebar -->
             <div class="aa-properties-single-sidebar">
               
+
                   <div class="aa-properties-info">
                     <h3>Cơ sở vật chất</h3>
                   <ul>
@@ -197,11 +177,12 @@
                   </ul>
                   </div>
 
-              <h3>Thông tin liên hệ</h3>
+
+              <h4>Thông tin liên hệ</h4>
 
               <div class="aa-properties-single-sidebar">
                 
-                  <h6 class = "">Khải Hưng</h6>
+                  <h5 class = "">Khải Hưng</h5>
                  <span>Số điện thoại: </span>
                       <a  rel="nofollow" href="tel:0978709247">
                         <i></i> 0978709247</a>
@@ -212,9 +193,11 @@
                     <br>
                   <span>Địa chỉ: </span>
                   <span>Phường Bình Trị Đông, Quận Bình Tân, Hồ Chí Minh </span>
+
                           <br>
                           <br>
                   <div>
+
                   
                     <a class="btn btn-primary w-100" target="_blank" rel="nofollow"
                     href="https://zalo.me/0978709247">Liên hệ Zalo</a>
@@ -228,6 +211,7 @@
                           </div>
                         </div>
                     
+
                         <script>
                           $(document).ready(function(){
                             $('.content').click(function(){
@@ -258,6 +242,7 @@
                         </div>
                    </div>
 
+
                 <div class="aa-properties-single-sidebar">
         
                   <div class="media">
@@ -268,6 +253,7 @@
                       
                     </div>              
                   </div>
+                  <hr>
                   <div class="media">
                   
                     <div class="media-body">
@@ -276,6 +262,7 @@
                       
                     </div>              
                   </div>
+                  <hr>
                   <div class="media">
                   
                     <div class="media-body">
@@ -284,6 +271,7 @@
                       
                     </div>              
                   </div>
+                  <hr>
                   <div class="media-body">
                     <h6 class="media-right"><a href="Roommate.html">Trở về trang ở ghép --></a></h6>
                   </div>              
@@ -311,19 +299,21 @@
                 </div>
             </div>
         </div>
-      </div>
-      <!-- Newsletter Start -->
-      <!-- Footer Start  -->
-      <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    </div>
+     <!-- Newsletter Start -->
+    
+
+ <!-- Footer Start  -->
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
         <div class="container pb-5">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-4">
                     <div class="bg-primary rounded p-4">
                         <a href="index.html"><h1 class="text-white text-uppercase mb-3">MORO</h1></a>
                         <p class="text-white mb-0">
-                        <a class="text-dark fw-medium" href="https://freewebsitecode.com/hotel-html-template-pro"></a>“Để việc tìm một mái ấm và chia sẻ không gian trở nên tối ưu và thuận tiện nhất, MORO
+             <a class="text-dark fw-medium" href="https://freewebsitecode.com/hotel-html-template-pro"></a>“Để việc tìm một mái ấm và chia sẻ không gian trở nên tối ưu và thuận tiện nhất, MORO
                              mang đến cho người dùng sự trải nghiệm hoàn mỹ về dịch vụ.”
-                        </p>
+          </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -350,7 +340,7 @@
                         </div>
                         <div class="col-md-6">
                             <h6 class="section-title text-start text-primary text-uppercase mb-4">Dịch vụ</h6>
-                            <a class="btn btn-link" href="">Cho thuê</a>
+                            <a class="btn btn-link" href="RentHome.html">Cho thuê</a>
                             <a class="btn btn-link" href="Roommate.html">Ở ghép</a>
                             <a class="btn btn-link" href="delivery_page.html">Vận chuyển</a>
                             <a class="btn btn-link" href="cleaningservice.html">Dọn phòng</a>
@@ -364,10 +354,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                         <a class="border-bottom" href="https://www.instagram.com/luoisskincare/"></a> Đã đăng ký với Bộ Công Thương. 
-          
-          
-           <a class="border-bottom" href="https://www.instagram.com/luoisskincare/">CÔNG TY THHH MORO</a>
+                         <a class="border-bottom" href="https://www.instagram.com/luoisskincare/" style="margin-top: 30px;"></a>Copyright © 2022 MORO.COM
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -375,6 +362,7 @@
                             <a href="">Cookies</a>
                             <a href="">Hỗ trợ</a>
                             <a href="">FQAs</a>
+                            <img src="img/index_img/DK.png" style="width: 140px; height: 50px;">
                         </div>
                     </div>
                 </div>
