@@ -3,7 +3,7 @@ getNormalNews();
 ShowPostDetails();
 
 function getHotNews() {
-    const url1 = "../js/PostRent.json";
+    const url1 = "../json/PostRent.json";
 fetch(url1)
   .then((response) => response.json()) // parse the JSON from the server
   .then(function(posts) {
@@ -46,7 +46,7 @@ fetch(url1)
 }
 
 function getNormalNews() {
-    const url2 = "../js/PostRent.json";
+    const url2 = "../json/PostRent.json";
     fetch(url2)
   .then((response) => response.json()) // parse the JSON from the server
   .then(function(posts) {
@@ -89,7 +89,7 @@ function getNormalNews() {
 })
 }
 function ShowPostDetails() {
-    const url3 = "../js/PostRent.json";
+    const url3 = "../json/PostRent.json";
     fetch(url3)
   .then((response) => response.json()) // parse the JSON from the server
   .then(function(post) {
@@ -135,7 +135,7 @@ function ShowPostDetails() {
             </div>
   
           <div class="aa-properties-info mb-0">
-            <h1 style="color: #FEA116; margin-top: 15px;">${post.contact[0]}</h1>           
+            <h1 style="color: #FEA116; margin-top: 15px;">${post.title}</h1>           
             <div id ="star" class="ps-2">` + showStar(star) + `</div>        
             <h5><i class="fa-solid fa-money-bill", style="color: #FEA116;"></i> &nbsp; ${post.price}</h5>
             <h5><i class="fa-solid fa-location-dot", style="color: #FEA116;"></i> &nbsp; ${post.address}</h5>
@@ -169,7 +169,7 @@ function ShowPostDetails() {
       <li>${post.facilities[4]}</li>
       <li>${post.facilities[5]}</li>
       <li>${post.facilities[6]}</li>
-      <li>${post.facilities[7]}</li>    
+   
     </ul>
     </div>
     <h4>Thông tin liên hệ</h4>
