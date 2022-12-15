@@ -180,11 +180,11 @@ body {
         font-weight: 300;
        }
 
-       .container{
+       /* .container{
 
         width: 100%;
 
-       }
+       } */
 
        .card{
 
@@ -399,7 +399,26 @@ body{font-size:16px;color:#303233;font-family:"Poppins", sans-serif;}
 .imgLogo{width:35px;height:35px;color:#fff}#header{display:flex;align-items:center;z-index:110;justify-content:center;box-shadow:0 2px 8px 2px rgba(0,0,0,.08);flex:0 0 40px}
 #header .header-wrapper .logo-wrap{display:flex;padding:12px 0}#header .header-wrapper .logo-wrap span{padding-top:12px}#footer{left:0;bottom:0;width:100%;line-height:1.5;border-top:1px solid #ebebeb}.momo-phone-icon{background:url(/v2/gateway/images/icons/phone-5890074462a7e14af36a3cf6466d6a5f.svg) no-repeat;padding-left:24px}.momo-mail-icon{background:url(/v2/gateway/images/icons/mail-92589bb9c19e4f2200dd8c5735aaf54c.svg) no-repeat;padding-left:24px}#footer .footer-wrapper{display:flex;flex-wrap:wrap}#footer .footer-wrapper .footer-wrap-version .footer-pci img{width:169px}#footer .footer-wrapper .footer-wrap-version span{display:block;font-weight:400;padding-top:12px;line-height:18px;font-size:14px}
 #footer .footer-wrapper .footer-wrap-version{flex:0 0 70%;padding-top:15px;padding-bottom:15px}#footer .footer-wrapper .footer-wrap-info{padding-top:15px;font-weight:400;flex:0 0 30%}#footer .footer-wrapper .footer-wrap-info span{padding-bottom:11px;display:block;font-weight:400;color:#727272;font-size:14px}#footer .footer-wrapper .footer-wrap-info a{padding-bottom:11px;color:#096dd9;font-size:14px;line-height:18px;display:block}body>
-.container{padding:60px 15px 0}.footer>.container{padding-right:15px;padding-left:15px}code{font-size:80%}.tooltip-inner{background-color:#096dd9;color:#fff;text-align:left;border-radius:8px;font-size:14px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.29;letter-spacing:normal}.bs-tooltip-auto[x-placement^=top] .arrow::before,.bs-tooltip-top .arrow::before{border-top-color:#096dd9}.bs-tooltip-auto[x-placement^=right] .arrow::before,.bs-tooltip-right .arrow::before{border-right-color:#096dd9}.bs-tooltip-auto[x-placement^=bottom] .arrow::before,.bs-tooltip-bottom .arrow::before{border-bottom-color:#096dd9}.bs-tooltip-auto[x-placement^=left] .arrow::before,.bs-tooltip-left .arrow::before{border-left-color:#096dd9}@media only screen and (max-width:900px){#footer .footer-wrapper{display:initial}#footer .footer-wrapper .footer-wrap-version{padding-bottom:unset;flex:0 0 70%}#footer .footer-wrapper .footer-wrap-info{flex:0 0 30%}}@media only screen and (max-width:600px){#footer .footer-wrapper .footer-wrap .footer-pci img{margin-left:60px;width:228px}#notfound{position:relative;height:77.9vh}#footer .footer-wrapper .footer-wrap span{display:block;margin-inline-start:0;margin-inline-end:0}.imgLogo{width:25px;height:30px;color:#fff}.momo-logo{width:35px;height:35px;flex:0 0 35px}.navbar-brand{margin-right:.5rem}#header .header-wrapper .logo-wrap span{padding-top:7px}}@media only screen and (max-width:320px){.popup-modal-dialog{max-width:250px;margin:1.75rem auto}}
+/* .container{padding:60px 15px 0} */
+.footer>.container{padding-right:15px;padding-left:15px}code{font-size:80%}
+.tooltip-inner{background-color:#096dd9;color:#fff;text-align:left;border-radius:8px;font-size:14px;font-weight:400;font-stretch:normal;font-style:normal;line-height:1.29;letter-spacing:normal}
+.bs-tooltip-auto[x-placement^=top] .arrow::before,.bs-tooltip-top .arrow::before{border-top-color:#096dd9}
+.bs-tooltip-auto[x-placement^=right] .arrow::before,.bs-tooltip-right .arrow::before{border-right-color:#096dd9}
+.bs-tooltip-auto[x-placement^=bottom]
+ .arrow::before,.bs-tooltip-bottom 
+ .arrow::before{border-bottom-color:#096dd9}
+ .bs-tooltip-auto[x-placement^=left]
+  .arrow::before,.bs-tooltip-left 
+ .arrow::before{border-left-color:#096dd9}@media only screen and (max-width:900px){#footer .footer-wrapper{display:initial}
+ #footer .footer-wrapper .footer-wrap-version{padding-bottom:unset;flex:0 0 70%
+}#footer .footer-wrapper .footer-wrap-info{flex:0 0 30%}}@media only screen and (max-width:600px){
+  #footer .footer-wrapper .footer-wrap .footer-pci img{margin-left:60px;width:228px}
+  #notfound{position:relative;height:77.9vh}#footer .footer-wrapper
+   .footer-wrap span{display:block;margin-inline-start:0;margin-inline-end:0}.imgLogo{width:25px;height:30px;color:#fff}
+   .momo-logo{width:35px;height:35px;flex:0 0 35px}
+   .navbar-brand{margin-right:.5rem}
+#header .header-wrapper .logo-wrap span{padding-top:7px}}@media only screen and (max-width:320px){
+  .popup-modal-dialog{max-width:250px;margin:1.75rem auto}}
 .yellow-color {
     color: rgb(252 211 77);
 }
