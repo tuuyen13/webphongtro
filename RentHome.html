@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MORO-HOMEPAGE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+      <!-- link fontawesome -->
+    <script src="https://kit.fontawesome.com/71fcac199f.js" crossorigin="anonymous"></script>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid nav-bar bg-transparent" style="background-color: #0F172B;">
+            <nav class="navbar navbar-expand-lg  navbar-light py-0 px-4" style="background-color: #0F172B;" >
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/index_img/Logo.png" alt="Icon" style="width: 100px; height: 100px;">
+                    </div>
+                    <h1 class="m-0 text-primary">MORO</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                        <a href="RentHome.html" class="nav-item nav-link active">Cho thuê</a>                            
+                        <a href="Roommate.html" class="nav-item nav-link" >Ở ghép</a>
+                        <a href="delivery_page.html" class="nav-item nav-link">Vận chuyển</a>
+                        <a href="cleaningservice.html" class="nav-item nav-link" >Dọn phòng</a>
+                        <a href="ServiceMotelRoom.html" class="nav-item nav-link">Dịch vụ</a>
+                        <a href="Blog_Full trang.html" class="nav-item nav-link">Bản tin</a>
+                        <a href="Về chúng tôi.html" class="nav-item nav-link" >Về Moro</a> 
+                    </div>
+                    <a href="Popupdangbai.html" class="btn btn-primary px-3 d-none d-lg-flex">Đăng tin<i class="fa-sharp fa-solid fa-circle-plus" style="margin-top: 5px;margin-left: 7px;"></i></a>
+                    <a href="profile.html"><i class="fa-regular fa-circle-user  fa-2x" style="color: #FEA116; margin-left: 20px;"></i></i></a>
+                </div>
+            </nav>
+        </div>
+        <!-- Header End -->
+
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header mb-5 p-0" style="background-image:url(img/rent/banner.png)">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Trang cho thuê</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Cho thuê</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Filter Start -->
+        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="bg-white shadow" style="padding: 35px;">
+                    <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="row g-2">
+
+                                <div class="col-md-3">
+                                    <div >
+                                        <input class="form-select" style="background-image: none;"  type="text" placeholder="Địa điểm">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Loại hình nhà ở</option>
+                                        <option value="1">Nhà trọ</option>
+                                        <option value="2">Chung cư</option>
+                                        <option value="3">Nhà nguyên căn</option>
+                                        <option value="4">Homestay</option>
+                                        <option value="5">Chung cư mini</option>
+                                        <option value="6">Chung cư dịch vụ</option>
+                                        <option value="7">Chung cư cao cấp</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Diện tích</option>
+                                        <option value="1">Dưới 20 m2</option>
+                                        <option value="2">Từ 20 m2 - 30 m2</option>
+                                        <option value="3">Từ 30 m2 - 50 m2</option>
+                                        <option value="4">Từ 50 m2 - 70 m2</option>
+                                        <option value="5">Từ 20 m2 - 90 m2</option>
+                                        <option value="6">Trên 90 m2</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Mức giá</option>
+                                        <option value="1">Dưới 1 triệu </option>
+                                        <option value="2">Từ 1 - 2 triệu</option>
+                                        <option value="3">Từ 2 - 3 triệu</option>
+                                        <option value="4">Từ 3 - 5 triệu</option>
+                                        <option value="5">Từ 5 - 7 triệu</option>
+                                        <option value="6">Từ 7 - 10 triệu</option>
+                                        <option value="7">Từ 10 - 15 triệu</option>
+                                        <option value="8">Trên 15 triệu</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100">Tìm kiếm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Filter End -->
+
+     
+        <!-- Booking Start -->
+        <div class="container-xxl">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title text-center text-primary text-uppercase">MORO</h4>
+                    <h1 >Tìm kiếm <span class="text-primary text-uppercase">nhà ở</span></h1>
+                </div>
+     
+                <!-- Hot Room start -->
+                
+                <div class="col-12">
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <h3 class="section-title text-start text-primary text-uppercase">Tin nổi bật</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="room-item shadow rounded overflow-hidden">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/rent/1.png" alt="">
+                                        <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                                    </div>
+                                    <div class="p-4 mt-2">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <h5 class="mb-0">Junior Suite</h5>
+                                            <div class="ps-2">
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-3">
+                                            <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                            <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                            <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                        </div>
+                                        <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                            <div>
+                                                <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                                <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="room-item shadow rounded overflow-hidden">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/rent/2.png" alt="">
+                                        <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                                    </div>
+                                    <div class="p-4 mt-2">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <h5 class="mb-0">Executive Suite</h5>
+                                            <div class="ps-2">
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-3">
+                                            <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                            <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                            <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                        </div>
+                                        <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                            <div>
+                                                <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                                <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="room-item shadow rounded overflow-hidden">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/rent/3.png" alt="">
+                                        <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                                    </div>
+                                    <div class="p-4 mt-2">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <h5 class="mb-0">Super Deluxe</h5>
+                                            <div class="ps-2">
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <small class="fa fa-star text-primary"></small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-3">
+                                            <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                            <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                            <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                        </div>
+                                        <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                            <div>
+                                                <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                                <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- Hot Room End -->
+
+        <!-- Normal Room start -->
+                
+        <div class="col-12">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h3 class="section-title text-start text-primary text-uppercase">Bản tin gần đây</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/rent/4.png" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Junior Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                    <div>
+                                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                        <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/rent/5.png" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Executive Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                    <div>
+                                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                        <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/room-3.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Super Deluxe</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                    <div>
+                                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                        <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/rent/4.jpeg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Junior Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                    <div>
+                                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                        <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/rent/5.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Executive Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                    <div>
+                                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                        <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/rent/6.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Super Deluxe</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Chi Tiết</a>
+                                    <div>
+                                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088275815987"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                                        <a class="btn btn-outline-light btn-social" href="https://zalo.me/0977407475"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking End -->
+
+       <!-- Newsletter Start --> 
+       <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 border rounded p-1">
+                <div class="border rounded text-center p-1">
+                    <div class="bg-white rounded text-center p-5">
+                        <h4 class="mb-4">Thắc mắc của bạn<span class="text-primary text-uppercase"> - Hỗ trợ giải đáp</span></h4>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Câu hỏi của bạn">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Newsletter Start -->
+    
+
+ <!-- Footer Start  -->
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-primary rounded p-4">
+                        <a href="index.html"><h1 class="text-white text-uppercase mb-3">MORO</h1></a>
+                        <p class="text-white mb-0">
+                             <a class="text-dark fw-medium" href="https://freewebsitecode.com/hotel-html-template-pro"></a>“Để việc tìm một mái ấm và chia sẻ không gian trở nên tối ưu và thuận tiện nhất, MORO
+                             mang đến cho người dùng sự trải nghiệm hoàn mỹ về dịch vụ.”
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Liên hệ</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Số 669 Quốc lộ 1, khu phố 3, Phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>012 345 678</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>moro@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="row gy-5 g-4">
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Chính sách</h6>
+                            <a class="btn btn-link" href="">Chính sách bảo mật</a>
+                            <a class="btn btn-link" href="">Chính sách giao dịch</a>
+                            <a class="btn btn-link" href="">Chính sách dịch vụ</a>
+                            <a class="btn btn-link" href="">Chính sách kiểm duyệt</a>
+                            <a class="btn btn-link" href="">Hỗ trợ</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Dịch vụ</h6>
+                            <a class="btn btn-link" href="RentHome.html">Cho thuê</a>
+                            <a class="btn btn-link" href="Roommate.html">Ở ghép</a>
+                            <a class="btn btn-link" href="delivery_page.html">Vận chuyển</a>
+                            <a class="btn btn-link" href="cleaningservice.html">Dọn phòng</a>
+                            <a class="btn btn-link" href="Blog_Full trang.html">Bản tin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                         <a class="border-bottom" href="https://www.instagram.com/luoisskincare/" style="margin-top: 30px;"></a>Copyright © 2022 MORO.COM
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Trang chủ</a>
+                            <a href="">Cookies</a>
+                            <a href="">Hỗ trợ</a>
+                            <a href="">FQAs</a>
+                            <img src="img/index_img/DK.png" style="width: 140px; height: 50px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/PostRent.js"></script>
+</body>
+
+</html>

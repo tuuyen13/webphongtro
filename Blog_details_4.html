@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotelier - Hotel HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- link fontawesome -->
+    <script src="https://kit.fontawesome.com/71fcac199f.js" crossorigin="anonymous"></script>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="Blog_style.css">
+     <!-- Style CSS comment -->
+     <link rel="stylesheet" href="css_comment/style.css">
+    
+     <!--Only for demo comment purpose - no need to add.-->
+     <link rel="stylesheet" type="text/css" href="css_comment/demo.css" />
+     
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+        p.left {
+           text-align: left;
+        }
+        p.right {
+           text-align: right;
+        }
+        p.center {
+           text-align: center;
+        }
+    </style> 
+    <style>
+        h4.left {
+           text-align: left;
+        }      
+    </style> 
+    <style type="text/css">
+        table, th, td{
+            border: hidden;
+            background-color:rgb(242, 241, 240);
+            border-radius: 10px;
+        }
+    </style>
+    
+    <style>
+       
+        .div-1 {
+         
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid nav-bar bg-transparent" style="background-color: #0F172B;">
+            <nav class="navbar navbar-expand-lg  navbar-light py-0 px-4" style="background-color: #0F172B;" >
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/index_img/Logo.png" alt="Icon" style="width: 100px; height: 100px;">
+                    </div>
+                    <h1 class="m-0 text-primary">MORO</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                        <a href="RentHome.html" class="nav-item nav-link">Cho thuê</a>                            
+                        <a href="Roommate.html" class="nav-item nav-link" >Ở ghép</a>
+                        <a href="delivery_page.html" class="nav-item nav-link">Vận chuyển</a>
+                        <a href="cleaningservice.html" class="nav-item nav-link" >Dọn phòng</a>
+                        <a href="ServiceMotelRoom.html" class="nav-item nav-link">Dịch vụ</a>
+                        <a href="Blog_Full trang.html" class="nav-item nav-link active">Bản tin</a>
+                        <a href="Về chúng tôi.html" class="nav-item nav-link" >Về Moro</a> 
+                    </div>
+                    <a href="Popupdangbai.html" class="btn btn-primary px-3 d-none d-lg-flex">Đăng tin<i class="fa-sharp fa-solid fa-circle-plus" style="margin-top: 5px;margin-left: 7px;"></i></a>
+                    <a href="profile.html"><i class="fa-regular fa-circle-user  fa-2x" style="color: #FEA116; margin-left: 20px;"></i></i></a>
+                </div>
+            </nav>
+        </div>
+        <!-- Header End -->
+
+
+
+        <!-- Bài viết -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div>
+                        <h6 class="section-title text-start text-primary text-uppercase">Bài viết chi tiết</h6>           
+                    </br>
+                    </br>
+                    <div class="row g-5 align-items-center">
+                        <div class="Thông tin demo">
+                            <i class='fas fa-clock' style='font-size:px;color:rgb(75, 81, 137)'></i>        
+                            <small class="Lượt xem">10 ngày trước</small>
+                            &ensp;&ensp;&ensp;
+                            <i class="fa fa-eye" style='font-size:px;color:rgb(72, 120, 133)'></i>     
+                            <small class="Lượt xem">200 lượt xem</small>
+                            &ensp;&ensp;&ensp;          
+                        </div> 
+                        <h1 align="center">Khách thuê căn hộ bất lực về tình trạng xả rác thiếu ý thức
+                        </h1>                                             
+                    </br>                    
+                        <p class="mb-4" style="text-align:justify">Anh Tâm trước đây từng thuê phòng trọ để ở, nhưng vì người hàng xóm kế bên mới chuyển vô ở cách đây vài ngày họ thiếu ý thức xả rác vô tội vạ nào là nước ngọt đổ ra ngoài không dọn, dẻ lau, giấy.... vứt lung tung bên ngoài không dọn để nhiều ngày có mùi khó chịu anh phải chủ động nhắc nhở người ta. Tuy vậy, chỉ được vài ngày là họ lại tiếp tục hành động của mình anh khá bất lực nhắc nhiều lần cũng vậy thôi. Anh bèn chuyển phòng trọ sang thuê một căn hộ để ở vì nơi đó toàn là những người tri thức, có lối sống lành mạnh và giữ vệ sinh sạch sẽ hơn nữa lại có đội dọn vệ sinh và ban quản lý. Sau vài ngày anh chuyển qua đã phải có những cuộc chạm chán với rác thải đều đặn của một số người hàng xóm xung quanh. Để biết được câu chuyện của anh Tâm thì hãy cùng 
+                            với chúng tôi trang web cho thuê căn hộ giá rẻ tìm hiểu qua bài viết "khách thuê căn hộ bất lực về tình trạng xả rác thiếu ý thức" dưới đây nhé.</p>  
+                        </br>
+                        <p style="text-align:justify">Ở một số căn hộ, cư dân luôn bất mãn vì những câu chuyện về rác thải. Một năm qua anh Tâm sống ở tầng dưới luôn phải đối mặt với những rác thải từ tầng trên rơi xuống. Anh cho biết, anh thuê chung cư nhỏ cao 9 tầng, có giếng trời xây dựng để điều hòa không khí cho các tầng, các cửa sổ đều mở thẳng đối diện với giếng trời. Đã gần 1 năm dọn về sống ở đây anh đã chứng kiến một số căn hộ cư dân sống ở tầng trên vứt rác xuống giếng trời đều đặn như cơm bữa. Tất cả các chung cư đều có một hệ thống xử lý rác thải riêng nằm ngay đối diện với thang máy hay cầu thang bộ. Hàng ngày đều có người đến gom rác mang đi xử lý. Nơi để gom rác nằm gần căn hộ chỉ cách vài bước chân thôi cũng không đem ra bỏ đúng nơi đúng chỗ, 
+                            vậy mà vô tư ném thẳng từ cửa sổ xuống ngày giếng trời làm cho không ít cư dân ở tầng dưới phải lãnh đủ.</p>
+                        </br>
+                        <center>
+                            <img class="img-fluid"  src="img/Blog_Hinhanh/Blog_xarac.jpg" style="margin-left: auto; margin-right: auto;  margin-top: auto; margin-bottom: 3ch;" width="100%"</center>
+                        </br>    
+                            <i><center><small>Tình trạng xả rác thiếu ý thức của người dân</small></center></i>
+                        </br>
+                            <p style="text-align:justify">Ngày nào, tôi cũng nghe những tiếng quăng rác mà người từ trên cao ném xuống, nhiều nhất thường vào ban đêm một số người xả rác vô tội vạ. Nhiều lần khi đang ngủ cả nhà tôi phải tỉnh giấc vì nghe những tiếng lộp bộp nhìn ra cửa sổ mới biết đó là những bịch rác rơi từ trên xuống. Nhiều khi rác chất thành từng đống không ai dọn từ ngày này qua ngày nọ làm cho cả khu vực trong chung cư đi đâu cũng nghe mùi khó chịu, anh và một số cư dân thuê căn hộ xung quanh đã phải đóng cửa ra vào giếng trời. Thật sự, lần này khá bứt rứt, mỗi lúc trời mưa xuống thì rác thải hòa cùng nước mưa chảy vào hành lang đã làm cho nhiều cư dân chỉ có cách nín thở.</p>
+                        </br>
+                        <p style="text-align:justify">
+                            Anh Tâm cho biết thêm, đã có lúc cư dân thuê căn hộ sống ở tầng dưới như tôi đã phải nhiều lần kiến nghị lên ban quản lý về việc rác thải thả trực tiếp từ trên xuống. Cư dân đã đóng góp ý kiếm thuê thêm người dọn rác mỗi ngày, nhưng đâu vào đó cứ tưởng là sạch sẽ ai ngờ ngày sau vẫn xuất hiện.</p>
+                       <p style="text-align:justify">Không chỉ riêng gì cư dân tại chung cư mà anh Tâm đang sống, thì có một số chung cư khác cũng rơi vào tình trạng này. Anh Tâm có một người bạn đang làm quản lý tại chung cư khác cung lắc đầu về tình trạng rác thải này. Chung cư này đã đi vào hoạt động nhiều năm chủ yếu là dân văn phòng, mỗi tầng đều có phòng chứa rác để cư dân bỏ đúng nơi quy định. Chúng tôi lại không hiểu sao cư dân đó lại cố ý hay sao đó không chấp hành dù đã có thông báo và nhắc nhở nhiều lần. Theo người quản lý chung cư có kể với anh Tâm rằng: "mỗi tầng đều có phòng để rác nhưng nhiều người lại thích bỏ ngay trước cửa ra vào từ ngày này qua ngày nọ, các nhân viên vệ sinh bên chúng tôi buộc phải đi dọn. 
+                        Nếu nhân viên chưa kịp dọn dẹp thì hàng xóm xung quanh sẽ trở thành nạn nhân chịu những mùi rác này.</p>
+                        <i><p class="right">Tổng hợp bởi đội ngũ nhân viên Moro</p></i>                    
+                         <!-- Trái tim start -->            
+                            <div class="heart-btn">
+                                <div class="content">
+                                <span class="heart"></span>
+                                <span class="text">Yêu thích</span>
+                                <span class="numb"></span>
+                                </div>
+                            </div>
+
+                            <script>
+                                $(document).ready(function(){
+                                $('.content').click(function(){
+                                    $('.content').toggleClass("heart-active")
+                                    $('.text').toggleClass("heart-active")
+                                    $('.numb').toggleClass("heart-active")
+                                    $('.heart').toggleClass("heart-active")
+                                });
+                                });
+                            </script>  
+                            </br>
+                            </br>
+                            <div class="div-1">   
+                            </br>
+                            </br>              
+                                <!-- Bình luận demo -->
+                                <h4 class="left">Bình luận</h4>
+                                </br>
+                                <strong><p class="left">1 Bình luận</p></strong>
+                                <table bgcolor="blue">
+                                    <tr>
+                                        <td>
+                                        <div>
+                                            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                                                <p class="left">Thiếu ý thức quá</p>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="img-fluid flex-shrink-0 rounded" src="img/Blog_Hinhanh/f5.jpg" style="width: 45px; height: 45px;">
+                                                    <div class="ps-3">
+                                                        <h6 class="fw-bold mb-1">Vy vy</h6>
+                                                        <i><small>7 ngày trước</small></i>
+                                                    </div>
+                                                </div>                                           
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                    <tr>  
+                                        <td>
+                                            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                                                <p class="left">Nhìn thấy chán</p>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="img-fluid flex-shrink-0 rounded" src="img/Blog_Hinhanh/F6.jpg" style="width: 45px; height: 45px;">
+                                                    <div class="ps-3">
+                                                        <h6 class="fw-bold mb-1">Thiên Thiên</h6>
+                                                        <i><small>3 ngày trước</small></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </div>
+                                    </tr>  
+                                    
+                                </table>
+                                <section id="app">
+                                    <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                        <div class="comment">
+                                        <p v-for="items in item" v-text="items"></p>
+                                        </div><!--End Comment-->
+                                        </div><!--End col -->
+                                        </div><!-- End row -->
+                                    <div class="row">
+                                        <div class="col-6">
+                                    <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                        <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Bình luận</button>
+                                        </div><!-- End col -->
+                                    </div><!--End Row -->
+                                    </div><!--End Container -->
+                                </section><!-- end App -->
+                                <!-- partial -->
+                                    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+                                    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+                                    <script  src="js_comment/script.js"></script>             
+                                </div>
+                                </div>
+                             </div>                    
+
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+     
+   <!-- Newsletter Start --> 
+   <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 border rounded p-1">
+            <div class="border rounded text-center p-1">
+                <div class="bg-white rounded text-center p-5">
+                    <h4 class="mb-4">Thắc mắc của bạn<span class="text-primary text-uppercase"> - Hỗ trợ giải đáp</span></h4>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Câu hỏi của bạn">
+                        <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Gửi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Newsletter Start -->
+
+
+<!-- Footer Start  -->
+<div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container pb-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-primary rounded p-4">
+                    <a href="index.html"><h1 class="text-white text-uppercase mb-3">MORO</h1></a>
+                    <p class="text-white mb-0">
+                         <a class="text-dark fw-medium" href="https://freewebsitecode.com/hotel-html-template-pro"></a>“Để việc tìm một mái ấm và chia sẻ không gian trở nên tối ưu và thuận tiện nhất, MORO
+                         mang đến cho người dùng sự trải nghiệm hoàn mỹ về dịch vụ.”
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h6 class="section-title text-start text-primary text-uppercase mb-4">Liên hệ</h6>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Số 669 Quốc lộ 1, khu phố 3, Phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>012 345 678</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>moro@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="row gy-5 g-4">
+                    <div class="col-md-6">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Chính sách</h6>
+                        <a class="btn btn-link" href="">Chính sách bảo mật</a>
+                        <a class="btn btn-link" href="">Chính sách giao dịch</a>
+                        <a class="btn btn-link" href="">Chính sách dịch vụ</a>
+                        <a class="btn btn-link" href="">Chính sách kiểm duyệt</a>
+                        <a class="btn btn-link" href="">Hỗ trợ</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Dịch vụ</h6>
+                        <a class="btn btn-link" href="RentHome.html">Cho thuê</a>
+                        <a class="btn btn-link" href="Roommate.html">Ở ghép</a>
+                        <a class="btn btn-link" href="delivery_page.html">Vận chuyển</a>
+                        <a class="btn btn-link" href="cleaningservice.html">Dọn phòng</a>
+                        <a class="btn btn-link" href="Blog_Full trang.html">Bản tin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                     <a class="border-bottom" href="https://www.instagram.com/luoisskincare/" style="margin-top: 30px;"></a>Copyright © 2022 MORO.COM
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="">Trang chủ</a>
+                        <a href="">Cookies</a>
+                        <a href="">Hỗ trợ</a>
+                        <a href="">FQAs</a>
+                        <img src="img/index_img/DK.png" style="width: 140px; height: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+<!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

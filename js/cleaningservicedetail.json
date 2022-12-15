@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "Clean 4 U",
+        "price": "150.000đ/tiếng",
+        "shortDes":"Chúng tôi cung cấp dịch vụ dọn phòng giá rẻ.",
+        "star":5,
+        "love":12,
+        "Zalo":"https://zalo.me/0978709247",
+        "info":"",
+        "address": "Địa chỉ: 18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh Hồ Chí Minh",
+        "description1": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "description2": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "description3": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "facilities": ["4 phòng ngủ", "3 phòng tắm", "nhà bếp", "máy lạnh", "ban công", "sân vườn", "camera an ninh"],
+        "contact": ["Clean 4 U", "090 123 4567", "https://zalo.me/0978709247"],
+        "image1":"img/room-1.jpg"
+    },
+    {
+        "id": 1,
+        "title": "Clean 4 U",
+        "price": "150.000đ/tiếng",
+        "shortDes":"Chúng tôi cung cấp dịch vụ dọn phòng giá rẻ.",
+        "star":5,
+        "love":12,
+        "Zalo":"https://zalo.me/0978709247",
+        "info":"",
+        "address": "Địa chỉ: 18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh Hồ Chí Minh",
+        "description1": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "description2": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "description3": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "facilities": ["4 phòng ngủ", "3 phòng tắm", "nhà bếp", "máy lạnh", "ban công", "sân vườn", "camera an ninh"],
+        "contact": ["Clean 4 U", "090 123 4567", "https://zalo.me/0978709247"],
+        "image1":"img/room-1.jpg"
+    },
+    
+]
+
+
