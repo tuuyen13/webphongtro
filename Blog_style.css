@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 .heart-btn{
+  margin-top: 5px;
   position: relative;
-  top: 40px; left: 40px;
+  text-align: center;
+  align-items: center;
+  /* height: 130px; */
+  top: 400%;
+  /* right: 20%; */
+  /* right: 300px; */
+  transform: translate(0%,0%);
 }
 .content{
-  padding: 13px 16px;
-  display: flex;
-  border: 2px solid #eae2e1;
+  position: relative;
+  padding: 3px 3px;
+  border: 2px solid #fea116;
   border-radius: 5px;
   cursor: pointer;
 }
 .content.heart-active{
-  border-color: #f9b9c4;
-  background: #fbd0d8;
+  border-color: #fea116;
+  background: #fbe2d0;
 }
 .heart{
   position: absolute;
@@ -21,13 +28,11 @@
   background-size: 2900%;
   height: 90px;
   width: 90px;
-  top: 50%;
-  left: 21%;
-  transform: translate(-50%,-50%);
+  transform: translate(-80%,-32%);
 }
 .text{
-  font-size: 21px;
-  margin-left: 30px;
+  /* margin-left: 100px; */
+  align-self: center;
   color: grey;
   font-family: 'Montserrat',sans-serif;
 }
@@ -57,8 +62,4 @@
   100%{
     background-position: right;
   }
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
 }
