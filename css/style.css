@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #FEA116;
-    --light: #F1F8FF;
+    --light: #FFFFFF;
     --dark: hsl(223, 48%, 11%);
 }
 
@@ -140,7 +140,7 @@
 .navbar-light .navbar-nav .nav-link {
   margin-right: 20px;
   padding: 25px 0;
-  color: #0E2E50;
+  color: #0F172B;
   font-size: 15px;
   text-transform: uppercase;
   outline: none;
@@ -164,7 +164,7 @@
   }
 
   .navbar-light .navbar-nav {
-      border-top: 1px solid #EEEEEE;
+      border-top: 1px solid #FFFFFF;
   }
 }
 
@@ -729,7 +729,7 @@
     padding-right: 0;
     border-right: none;
 }
-/* Trang đăng bài by PhuocTon start*/
+
 .modal-box{
     font-family: 'Poppins', sans-serif;
     display: flex;
