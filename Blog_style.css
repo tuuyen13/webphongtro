@@ -14,7 +14,7 @@
   position: relative;
   padding: 3px 3px;
   border: 2px solid #fea116;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
 }
 .content.heart-active{

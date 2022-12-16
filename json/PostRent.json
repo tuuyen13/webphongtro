@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Phòng trọ mới Việt Phạm",
+        "title": "Phòng trọ Việt Phạm",
         "price": "2.6 triệu/tháng",
         "shortDes":"Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn.",
         "star":5,
@@ -18,7 +18,7 @@
     },
     {
         "id": 2,
-        "title": "Phòng trọ đường Hoàng Văn Thụ",
+        "title": "Phòng trọ Hoàng Văn",
         "price": "1.8 triệu/tháng",
         "shortDes":"Giá Phòng từ 1800k đến xem đảm bảo ưng ý, cam kết hình đúng với thực tế",
         "star":5,
@@ -35,7 +35,7 @@
     },
     {
         "id": 3,
-        "title": "Phòng trọ Thành Thái, Quận 10",
+        "title": "Phòng trọ Thành Thái",
         "price": "5 triệu/tháng",
         "shortDes":"Cho thuê phòng trọ ngay trung tâm Quận 10, gần ngay Vạn Hạnh Mall",
         "star":5,
@@ -104,7 +104,7 @@
     },
     {
         "id": 7,
-        "title": "Cho thuê căn hộ 40m2 gần Đại Học RMIT",
+        "title": "Căn hộ 40m2 kế RMIT",
         "price": "5.5 - 7.5 triệu/tháng",
         "shortDes":"Đầy đủ nội thất như hình, có bồn tắm nằm, tủ lạnh 130L (bổ sung sau). Căn Studio rộng 40m2, ban công, ánh sáng tốt.",
         "star":5,
@@ -121,7 +121,7 @@
     },
     {
         "id": 8,
-        "title": "Căn hộ 2 phòng Hoàng Hoa Thám",
+        "title": "Căn hộ Hoàng Hoa Thám",
         "price": "7.5 triệu/tháng",
         "shortDes":"Căn hộ 45m2, 2 phòng ngủ, full nội thất, mới 100%, bên hông chợ Hoàng Hoa Thám: 337/11 Trường Chinh, P14, Tân Bình.",
         "star":4,
@@ -138,7 +138,7 @@
     },
     {
         "id": 9,
-        "title": "Phòng trọ Tầng cao Trần Phú",
+        "title": "Phòng trọ Trần Phú",
         "price": "3 triệu/tháng",
         "shortDes":"Phòng trọ cho thuê chính chủ, còn 2 phòng ở tầng 1 và 3 (tầng trên có 2 cửa sổ), đầy đủ tiện nghi tại: 194, Trần Phú, P9, Quận 5, gần Plaza",
         "star":3,
