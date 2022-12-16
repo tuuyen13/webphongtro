@@ -256,13 +256,13 @@ function ShowPostDetails() {
       return `<div class="aa-properties-info">
       <h4>Cơ sở vật chất</h4>
     <ul>
-      <li><i class="fa-solid fa-bed"></i> ${post.facilities[0]}</li>
-      <li><i class="fa-solid fa-bath"></i> ${post.facilities[1]}</li>
-      <li><i class="fa-solid fa-wifi"></i> ${post.facilities[2]}</li>
-      <li><i class="fa-solid fa-tv"></i> ${post.facilities[3]}</li>
-      <li><i class="fa-solid fa-utensils"></i> ${post.facilities[4]}</li>
-      <li><i class="fa-solid fa-washer"></i> ${post.facilities[5]}</li>
-      <li><i class="fa-solid fa-air-conditioner"></i> ${post.facilities[6]}</li>
+      <li><i class="fa-solid fa-bed"></i> &nbsp;${post.facilities[0]}</li>
+      <li><i class="fa-solid fa-bath"></i> &nbsp;${post.facilities[1]}</li>
+      <li><i class="fa-solid fa-utensils"></i> &nbsp;${post.facilities[2]}</li>
+      <li><i class="fa-solid fa-temperature-arrow-up"></i> &nbsp;${post.facilities[3]}</li>
+      <li><i class="fa-solid fa-door-open"></i> &nbsp;${post.facilities[4]}</li>
+      <li><i class="fa-solid fa-tree"></i> &nbsp;${post.facilities[5]}</li>
+      <li><i class="fa-solid fa-shield-halved"></i> &nbsp;${post.facilities[6]}</li>
     </ul>
     </div>
     <h4>Thông tin liên hệ</h4>
