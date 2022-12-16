@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "shortTitle":"Chuyển nhà 24h",
         "title": "Chuyển nhà 24h | Dịch vụ dọn phòng thân thiện với sinh viên",
         "place": "Toàn quốc",
         "shortDes":"Chuyển nhà trọ sinh viên thành phố Hồ Chí Minh sẽ tiện lợi, an toàn và tiết kiệm chi phí ",
@@ -23,6 +24,7 @@
     },
     {
         "id": 2,
+        "shortTitle": "Thành Hưng house",
         "title": "Thành Hưng house | Dịch vụ cho thuê xe tải, taxi tải bao giá.",
         "place": "Toàn quốc",
         "shortDes":"Đơn vị cung cấp hơn 60 đầu xe đa tải trọng từ 0.5 tới 15 tấn, xe siêu trường, xe siêu trọng.",
@@ -45,6 +47,7 @@
     },
     {
         "id": 3,
+        "shortTitle": "Kiến Vàng",
         "title": "Kiến Vàng | Dịch vụ uy tín - đảm bảo - giá rẻ - chuyên nghiệp.",
         "place": "Hồ Chí Minh",
         "shortDes":"Dịch vụ chuyển nhà sinh viên với thiết bị hiện đại, đội ngũ nhân viên được đào tạo bài bản.",
@@ -67,9 +70,10 @@
     },
     {
         "id": 4,
+        "shortTitle":"Xe ba gác",
         "title": "Xe ba gác | Giá rẻ vô địch",
         "place": "Bình Dương",
-        "shortDes":"Chế độ ưu đãi giúp các bạn sinh viên. Các xe chở đồ hay dụng cụ tháo lắp đều đạt chất lượng cao, đảm bảo an toàn trong quá trình vận chuyển.",
+        "shortDes":"Các xe chở đồ, dụng cụ đều đạt chất lượng cao, đảm bảo an toàn trong quá trình vận chuyển.",
         "image": "img/delivery-5.png",
         "p1": ["Lý do chọn chúng tôi?","Gía rẻ vô địch. ","Giao ngay tức thì, không chờ đợi."," Nhiều loại xe, nhiều tải trọng."," Dịch vụ trọn gói, chuyên nghiệp."," Tài xế chuyên nghiệp, tận tâm."],
         "p2": ["Sự khác biệt về dịch vụ của Đội xe ba gác trên thị trường","Hỗ trợ bưng bê đồ, tháo, ráp đồ nội thất cho quý khách."," Luồn lách được qua những con ngõ hẹp và những con đường có địa hình phức tạp."," Giảm 30% giá tiền cho học sinh, sinh viên và ưu đãi lớn đối với khách hàng thân thiết."],
@@ -89,6 +93,7 @@
     },
     {
         "id": 5,
+        "shortTitle":"Việt Moving",
         "title": "Việt Moving | Dịch vụ vận chuyển nhanh - tiện.",
         "place": "Đà Nẵng",
         "shortDes":"Vận chuyển nhanh chóng, đóng gói đồ đạc đảm bảo, mang đến sự an toàn tuyệt đối cho bạn.",
@@ -111,6 +116,7 @@
     },
     {
         "id": 6,
+        "shortTitle":"Vinamoves",
         "title": "Vinamoves | Sự lựa chọn của người Việt.",
         "place": "Hồ Chí Minh",
         "shortDes":"Một dịch vụ chuyển nhà sinh viên uy tín, nhanh chóng, an toàn với mức giá rẻ",
