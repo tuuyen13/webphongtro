@@ -73,6 +73,18 @@
         </div>
         </div>
     </div>
+ <div id="modalPayMomo" class="modal">           
+        <div class="modal-content">
+            <span id="close" class="close">x</span>
+            <i class="fa fa-check text-center" style="font-size:48px;color:rgb(17, 219, 34)"></i>
+        <h4 class="text-center">Thanh toán thành công</h4>
+        <div class="buttons">             
+            <button class="btn-post" style="margin-right: 50px;" onclick="window.location.href='FormRenthome.html'">ĐĂNG BÀI</button>
+            <button class="btn-backhome" onclick="window.location.href='Homepage.html'">VỀ TRANG CHỦ</button>
+        </div>
+        </div>
+    </div>
+
     <div class="payment-container">
         <div></div>
         <div class="container" id="contents">
@@ -123,7 +135,7 @@
                 </div>
                 
             </div>
-            <button id="btnPay" type="button" class="btn-payment mt-2">Thanh toán</button>
+           
             
       
         </div>
@@ -324,41 +336,41 @@
                     'device': device
                 });
 
-                if ("linkWallet" == 'linkWallet') {
-                    stringPartner = " Bạn chắc chắn muốn hủy phiên liên kết <strong> Ví MoMo </strong> với " + "<strong>" + "Moro" + "</strong>" + "  hiện tại?";
-                    showCommonModal("Hủy phiên liên kết dịch vụ",
-                        stringPartner,
-                        "HỦY PHIÊN",
-                        "return back()",
-                        "ĐÓNG",
-                        "return closeCommonModalAndSendEvent()");
-                    return false;
-                }
+                // if ("linkWallet" == 'linkWallet') {
+                //     stringPartner = " Bạn chắc chắn muốn hủy phiên liên kết <strong> Ví MoMo </strong> với " + "<strong>" + "Moro" + "</strong>" + "  hiện tại?";
+                //     showCommonModal("Hủy phiên liên kết dịch vụ",
+                //         stringPartner,
+                //         "HỦY PHIÊN",
+                //         "return back()",
+                //         "ĐÓNG",
+                //         "return closeCommonModalAndSendEvent()");
+                //     return false;
+                // }
 
-                if ("linkWallet" == 'topUp') {
-                    stringPartner = " Bạn chắc chắn muốn rời khỏi trang quét mã này?";
-                    showCommonModal("Rời khỏi trang quét mã?",
-                        stringPartner,
-                        "ĐỒNG Ý",
-                        "return back()",
-                        "ĐÓNG",
-                        "return closeCommonModalAndSendEvent()");
-                    return false;
-                }
+                // if ("linkWallet" == 'topUp') {
+                //     stringPartner = " Bạn chắc chắn muốn rời khỏi trang quét mã này?";
+                //     showCommonModal("Rời khỏi trang quét mã?",
+                //         stringPartner,
+                //         "ĐỒNG Ý",
+                //         "return back()",
+                //         "ĐÓNG",
+                //         "return closeCommonModalAndSendEvent()");
+                //     return false;
+                // }
 
-                if ("linkWallet" == 'payWithMethod') {
-                    location.reload();
-                    return false;
-                }
+                // if ("linkWallet" == 'payWithMethod') {
+                //     location.reload();
+                //     return false;
+                // }
 
-                stringPartner = "Bạn chắc chắn muốn hủy giao dịch thanh toán với " + "<strong>" + "Spotify" + "</strong>" + "?";
-                showCommonModal("Huỷ giao dịch thanh toán",
-                    stringPartner,
-                    "HUỶ GIAO DỊCH",
-                    "return back()",
-                    "ĐÓNG",
-                    "return closeCommonModalAndSendEvent()");
-                return false;
+                // stringPartner = "Bạn chắc chắn muốn hủy giao dịch thanh toán với " + "<strong>" + "Spotify" + "</strong>" + "?";
+                // showCommonModal("Huỷ giao dịch thanh toán",
+                //     stringPartner,
+                //     "HUỶ GIAO DỊCH",
+                //     "return back()",
+                //     "ĐÓNG",
+                //     "return closeCommonModalAndSendEvent()");
+                // return false;
             })
         }
     </script>
