@@ -7,11 +7,11 @@ $(document).ready(function(){
         var caretPosition = this.selectionStart;
         var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
         var parts = [];
-        
+
         for (var i = 0, len = sanitizedValue.length; i < len; i += 4) {
             parts.push(sanitizedValue.substring(i, i + 4));
         }
-        
+
         for (var i = caretPosition - 1; i >= 0; i--) {
             var c = this.value[i];
             if (c < '0' || c > '9') {
@@ -19,7 +19,7 @@ $(document).ready(function(){
             }
         }
         caretPosition += Math.floor(caretPosition / 4);
-        
+
         this.value = this.lastValue = parts.join('-');
         this.selectionStart = this.selectionEnd = caretPosition;
     }
@@ -34,6 +34,10 @@ $(document).ready(function(){
         if (document.getElementById("email").value == "") {
             alert("Vui lòng nhập thông tin thanh toán!");
             document.getElementById("email").focus();}
+            // else if(document.getElementById("email").value != "*@*.*"){
+            // if (!filter.test(email.value)) { 
+            //     alert("Vui lòng nhập đúng định dạng email!");
+            //     document.getElementById("email").focus();} 
                else{
                     modalEmail.style.display = "block";
                     } 
@@ -46,7 +50,35 @@ $(document).ready(function(){
         }
         }
             };
-
+// check thẻ tín dụng
+        // var modalCredit = document.getElementById("modalPaySuccess");
+        // var btnPay = document.getElementById("btnPay");
+        // var span = document.getElementsByClassName("close")[0];
+        // btnPay.onclick = function() 
+        // {
+        // if (document.getElementById("cr_no").value == "") {
+        //     alert("Vui lòng nhập thông tin thanh toánn!");
+        //     document.getElementById("cr_no").focus();}
+        // else if(document.getElementById("date1").value == "") 
+        //     {
+        //             alert("Vui lòng nhập thông tin thanh toánnn!");
+        //             document.getElementById("date1").focus();
+        //     } else if (document.getElementById("cvcpwd").value == "") 
+        //         {
+        //             alert("Vui lòng nhập thông tin thanh toánnnn!");
+        //             document.getElementById("cvcpwd").focus();
+        //          }
+        //             else{ modalCredit.style.display = "block";
+        //                 }
+        // span.onclick = function() {
+        //     modalCredit.style.display = "none";
+        // }
+        // window.onclick = function(event) {
+        // if (event.target == modalCredit) {
+        //     modalCredit.style.display = "none";
+        // }
+        // }
+        //     };
         var modalCredit = document.getElementById("modalPaySuccess");
         var btnPay = document.getElementById("btnPay");
         var span = document.getElementsByClassName("close")[0];
@@ -54,11 +86,11 @@ $(document).ready(function(){
         {
         if ((document.getElementById("cr_no").value == "") || (document.getElementById("cvcpwd").value == "") ||(document.getElementById("date").value == "")) 
         {
-            alert("Vui lòng nhập thông tin thanh toán!");
+            alert("Vui lòng nhập thông tin thanh toánn!");
             document.getElementById("cr_no").focus();
         }
              else{ modalCredit.style.display = "block";
-             
+
             }}
         span.onclick = function() {
             modalCredit.style.display = "none";
@@ -82,6 +114,18 @@ $(document).ready(function(){
                 modalPayMomo.style.display = "block";
             }, 7000);
            };
-      
-   
-            
+
+        // var modalMomo = document.getElementById("modalPayMomo");
+    //    var btnPayyy = document.getElementById("btnPay");
+    //    var spann = document.getElementsByClassName("closee")[0];
+    //     btnPayy.onclick = function() {
+    //         modalPayMomo.style.display = "block";
+    //    } 
+    //     spann.onclick = function() {
+    //         modalPayMomo.style.display = "none";
+    //     }
+    //     window.onclick = function(event) {
+    //     if (event.target == modalPayMomo) {
+    //         modalPayMomo.style.display = "none";
+    //     }
+    //     };
