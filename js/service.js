@@ -12,7 +12,7 @@ fetch(url1)
             let star  = post.star;
             return `<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="room-item shadow rounded overflow-hidden">
-                <div class="position-relative">
+                <div class="position-relative zoom">
                     <img class="img-fluid" src="${post.image1}" alt="">
                     <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${post.price}
                     </small>
@@ -48,7 +48,7 @@ function showTransportService() {
             let star  = post.star;
             return `<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="room-item shadow rounded overflow-hidden">
-                <div class="position-relative">
+                <div class="position-relative zoom">
                     <img class="img-fluid" src="${post.image}" alt="">
                     <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${post.price}</small>
                 </div>
