@@ -149,7 +149,7 @@ function ShowPostDetails() {
             <address class="section-description">${post.address}</address></div>
             <div class="section-content">
               <div id="__maps_content" style="width:100%; height:300px;" data-lat="" data-long="" data-address="18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh">
-                <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh&amp;key=AIzaSyD6Coia3ssHYuRKJ2nDysWBdSlVlBCzKAw&amp;zoom=14" allowfullscreen=""></iframe>
+                <iframe width="100%" height="100%" frameborder="0" style="border:0" src="img/map.jpg" allowfullscreen=""></iframe>
               </div>
             </div>
           </section>
