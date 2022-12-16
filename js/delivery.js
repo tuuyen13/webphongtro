@@ -20,7 +20,7 @@ function showTransportService() {
                 </div>
                 <div class="p-4 mt-2">
                     <div class="d-flex justify-content-between mb-0">
-                        <h5 class="mb-1">${post.title}</h5>
+                        <h5 class="mb-1">${post.shortTitle}</h5>
                         <div id ="star" class="ps-2">` + showStar(star) + `</div>
                     </div>
                     <div class= "d-flex justify-content-between">
