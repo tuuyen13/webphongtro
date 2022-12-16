@@ -14,7 +14,7 @@ fetch(url1)
         var html = hotposts.map(function(post) {          
             return `<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="room-item shadow rounded overflow-hidden">
-                <div class="position-relative">
+                <div class="position-relative zoom">
                     <img class="img-fluid" src="${post.image1}" alt="">
                     <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${post.price}</small>
                 </div>
@@ -58,7 +58,7 @@ function getNormalNews1() {
     var html = normalposts.map(function(post) {          
       return `<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
       <div class="room-item shadow rounded overflow-hidden">
-          <div class="position-relative">
+          <div class="position-relative zoom">
               <img class="img-fluid" src="${post.image1}" alt="">
               <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${post.price}</small>
           </div>
@@ -101,7 +101,7 @@ fetch(url1)
       var html = hotposts.map(function(post) {          
           return `<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
           <div class="room-item shadow rounded overflow-hidden">
-              <div class="position-relative">
+              <div class="position-relative zoom">
                   <img class="img-fluid" src="${post.image1}" alt="">
                   <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${post.price}</small>
               </div>
@@ -145,7 +145,7 @@ function getNormalNews2() {
   var html = normalposts.map(function(post) {          
     return `<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
     <div class="room-item shadow rounded overflow-hidden">
-        <div class="position-relative">
+        <div class="position-relative zoom">
             <img class="img-fluid" src="${post.image1}" alt="">
             <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${post.price}</small>
         </div>
