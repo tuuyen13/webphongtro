@@ -326,6 +326,7 @@ body {
   padding: 20px;
   left: 50%;
   position: absolute;
+  align-items: center;
 }
 .btn-payment{
  
