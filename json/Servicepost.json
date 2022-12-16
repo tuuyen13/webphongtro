@@ -2,25 +2,28 @@
     {
         "id": 1,
         "typeService": "Cho thuê",
-        "typePost":"Nổi bật",
+        "typePost":"Nổi bật *",
         "duration": "01 ngày",
-        "price": "45.000 VNĐ"  
+        "price": "45.000 VNĐ" ,
+        "btnName": " Gói 1 ngày"
     },
     {
         "id": 2,
         "typeService": "Cho thuê",
-        "typePost":"Nổi bật",
+        "typePost":"Nổi bật *",
         "duration": "07 ngày",
         "price": "269.000 VNĐ"  ,
-        "form": "FormRenthome.html"
+        "form": "FormRenthome.html",
+        "btnName": " Gói 7 ngày"
     },
     {
         "id": 3,
         "typeService": "Cho thuê",
-        "typePost":"Nổi bật",
+        "typePost":"Nổi bật *",
         "duration": "30 ngày",
         "price": "1.119.000 VNĐ",
-        "form": "FormRenthome.html"  
+        "form": "FormRenthome.html" ,
+        "btnName": " Gói 30 ngày" 
     },
     {
         "id": 4,
@@ -28,7 +31,8 @@
         "typePost":"Tin thường",
         "duration": "01 ngày",
         "price": "5.000 VNĐ" ,
-        "form": "FormRenthome.html" 
+        "form": "FormRenthome.html" ,
+        "btnName": " Gói 1 ngày"
     },
     {
         "id": 5,
@@ -36,7 +40,8 @@
         "typePost":"Tin thường",
         "duration": "07 ngày",
         "price": "29.000 VNĐ" ,
-        "form": "FormRenthome.html" 
+        "form": "FormRenthome.html" ,
+        "btnName": " Gói 7 ngày"
     },
     {
         "id": 6,
@@ -44,31 +49,35 @@
         "typePost":"Tin thường",
         "duration": "30 ngày",
         "price": "119.000 VNĐ" ,
-        "form": "FormRenthome.html" 
+        "form": "FormRenthome.html",
+        "btnName": " Gói 30 ngày" 
     },
     {
         "id": 7,
         "typeService": "Ở ghép",
-        "typePost":"Nổi bật",
+        "typePost":"Nổi bật *",
         "duration": "01 ngày",
         "price": "19.000 VNĐ",
-        "form": "FormRoommate.html"  
+        "form": "FormRoommate.html"  ,
+        "btnName": " Gói 1 ngày"
     },
     {
         "id": 8,
         "typeService": "Ở ghép",
-        "typePost":"Nổi bật",
+        "typePost":"Nổi bật *",
         "duration": "07 ngày",
         "price": "119.000 VNĐ" ,
-        "form": "FormRoommate.html"   
+        "form": "FormRoommate.html"  ,
+        "btnName": " Gói 7 ngày" 
     },
     {
         "id": 9,
         "typeService": "Ở ghép",
-        "typePost":"Nổi bật",
+        "typePost":"Nổi bật *",
         "duration": "30 ngày",
         "price": "469.000 VNĐ",
-        "form": "FormRoommate.html"  
+        "form": "FormRoommate.html",
+        "btnName": " Gói 30 ngày"  
     },
     {
         "id": 10,
@@ -76,7 +85,8 @@
         "typePost":"Tin thường",
         "duration": "01 ngày",
         "price": "3.000 VNĐ" ,
-        "form": "FormRoommate.html"   
+        "form": "FormRoommate.html",
+        "btnName": " Gói 1 ngày"   
     },
     {
         "id": 11,
@@ -84,7 +94,8 @@
         "typePost":"Tin thường",
         "duration": "07 ngày",
         "price": "18.000 VNĐ"  ,
-        "form": "FormRoommate.html"  
+        "form": "FormRoommate.html"  ,
+        "btnName": " Gói 7 ngày"
     },
     {
         "id": 12,
@@ -92,6 +103,7 @@
         "typePost":"Tin thường",
         "duration": "30 ngày",
         "price": "59.000 VNĐ"  ,
-        "form": "FormRoommate.html"  
+        "form": "FormRoommate.html"  ,  
+        "btnName": " Gói 30 ngày"
     }
 ]

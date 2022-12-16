@@ -65,7 +65,7 @@
                     <a href="Roommate.html" class="nav-item nav-link" >Ở ghép</a>
                     <a href="delivery_page.html" class="nav-item nav-link">Vận chuyển</a>
                     <a href="cleaningservice.html" class="nav-item nav-link" >Dọn phòng</a>
-                    <a href="ServiceMotelRoom.html" class="nav-item nav-link active">Dịch vụ</a>
+                    <a href="ServiceMotelRoom.html" class="nav-item nav-link">Dịch vụ</a>
                     <a href="Blog_Full trang.html" class="nav-item nav-link">Bản tin</a>
                     <a href="Về chúng tôi.html" class="nav-item nav-link" >Về Moro</a> 
                 </div>
@@ -99,7 +99,7 @@
     <h1 class="mb-5"><span class="text-primary text-uppercase">Gói đăng tin thuê trọ</span></h1>
 </div>
 <section class="plan">
-    <div class="box-container" style="height: 100;">
+    <div id="renthome" class="box-container" style="height: 100;">
         <div class="box" style="height: fit-content;">
             <h3 class="title">Tin nổi bật</h3>
             <ul>
@@ -110,11 +110,11 @@
                 <li><i class="fa-solid fa-check"></i> Xuất hiện trên tin nổi bật, bộ lọc tìm kiếm được ưu tiên.</li>
             </ul>
             <div class="btn-container">
-                <a href="#"><button class="btn-service">Gói 1 ngày<br>
+                <a onclick="Details(1)"><button class="btn-service">Gói 1 ngày<br>
                     45.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 7 ngày<br>
+                <a onclick="Details(2)"><button class="btn-service">Gói 7 ngày<br>
                     269.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 30 ngày<br>
+                <a onclick="Details(3)"><button class="btn-service">Gói 30 ngày<br>
                     1.119.000 VNĐ</button></a>
             </div>         
 
@@ -130,11 +130,11 @@
                 <li><i class="fa-solid fa-check"></i> Chỉ xuất hiện trên tin thường, bộ lọc tìm kiếm bị hạn chế</li>                          
             </ul>
             <div class="btn-container">
-                <a href="#"><button class="btn-service">Gói 1 ngày<br>
+                <a onclick="Details(4)"><button class="btn-service">Gói 1 ngày<br>
                     5.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 7 ngày<br>
+                <a onclick="Details(5)"><button class="btn-service">Gói 7 ngày<br>
                     29.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 30 ngày<br>
+                <a onclick="Details(6)"><button class="btn-service">Gói 30 ngày<br>
                     119.000 VNĐ</button></a>
             </div>
 
@@ -150,7 +150,7 @@
     <h1 class="mb-5"><span class="text-primary text-uppercase">Gói đăng tin ở ghép</span></h1>
 </div>
 <section class="plan">
-    <div class="box-container" style="height: 100;">
+    <div id ="roommate" class="box-container" style="height: 100;">
         <div class="box" style="height: fit-content;">
             <h3 class="title">Tin nổi bật</h3>        
             <ul>
@@ -160,11 +160,11 @@
                 <li><i class="fa-solid fa-check"></i> Xuất hiện trên tin nổi bật, bộ lọc tìm kiếm được ưu tiên.</li>
             </ul>
             <div class="btn-container">
-                <a href="#"><button class="btn-service">Gói 1 ngày<br>
+                <a onclick="Details(7)"><button class="btn-service">Gói 1 ngày<br>
                     19.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 7 ngày<br>
+                <a onclick="Details(8)"><button class="btn-service">Gói 7 ngày<br>
                     119.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 30 ngày<br>
+                <a onclick="Details(9)"><button class="btn-service">Gói 30 ngày<br>
                     469.000 VNĐ</button></a>
 
             </div>
@@ -181,11 +181,11 @@
 
             </ul>
             <div class="btn-container">
-                <a href="#"><button class="btn-service">Gói 1 ngày<br>
+                <a onclick="Details(10)"><button class="btn-service">Gói 1 ngày<br>
                     3.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 7 ngày<br>
+                <a onclick="Details(11)"><button class="btn-service">Gói 7 ngày<br>
                     18.000 VNĐ</button></a>
-                <a href="#"><button class="btn-service">Gói 30 ngày<br>
+                <a onclick="Details(12)"><button class="btn-service">Gói 30 ngày<br>
                     59.000 VNĐ</button></a>
             </div>
 
@@ -195,8 +195,8 @@
 </section>
 <!-- gói ở ghép ends -->
 
-<!-- Newsletter Start --> 
-<div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <!-- Newsletter Start --> 
+  <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="row justify-content-center">
         <div class="col-lg-10 border rounded p-1">
             <div class="border rounded text-center p-1">
@@ -301,6 +301,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="payment.js"></script>
+    <script src="js/ServicePack.js"></script>
 </body>
 
 </html>

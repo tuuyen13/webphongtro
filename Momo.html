@@ -64,13 +64,13 @@
 </head>
 <body>
     <div id="modalPayMomo" class="modal">           
-        <div class="modal-content">
+        <div class="modal-content" style="width: fit-content;">
             <span id="close" class="close">x</span>
             <i class="fa fa-check text-center" style="font-size:48px;color:rgb(17, 219, 34)"></i>
         <h4 class="text-center">Thanh toán thành công</h4>
         <div class="buttons">             
-            <button class="btn-post" style="margin-right: 50px;" onclick="window.location.href='FormRenthome.html'">ĐĂNG BÀI</button>
-            <button class="btn-backhome" onclick="window.location.href='Homepage.html'">VỀ TRANG CHỦ</button>
+            <button class="btn-post" style="margin-right: 50px;" onclick="PostType()">ĐĂNG BÀI</button>
+            <button class="btn-backhome" onclick="window.location.href='index.html'">VỀ TRANG CHỦ</button>
         </div>
         </div>
     </div>
@@ -106,7 +106,7 @@
                                 <div>
                                     <div>
                                         <ul class="logo-link">
-                                            <li><img class="merchant-logo-link" src="img/logo.png"></li>
+                                            <li><img class="merchant-logo-link" src="img/Logo1.png"></li>
                                             <li class="fa fa-link" style="font-size:25px;color:#FEA116"></li>
                                             <li><img class="merchant-logo-link" src="img/paymentMomo.png"></li>
                                         </ul>
@@ -326,7 +326,7 @@
                 });
 
                 if ("linkWallet" == 'linkWallet') {
-                    stringPartner = " Bạn chắc chắn muốn hủy phiên liên kết <strong> Ví MoMo </strong> với " + "<strong>" + "Spotify" + "</strong>" + "  hiện tại?";
+                    stringPartner = " Bạn chắc chắn muốn hủy phiên liên kết <strong> Ví MoMo </strong> với " + "<strong>" + "Moro" + "</strong>" + "  hiện tại?";
                     showCommonModal("Hủy phiên liên kết dịch vụ",
                         stringPartner,
                         "HỦY PHIÊN",
@@ -366,6 +366,7 @@
     <script src="jquery-1.9.1.js"></script>
     <script src="jquery.cookie.js"></script>
     <script src="payment.js" defer></script>
+    <script src="js/ServicePack.js"></script>
 </div> 
 
 <script>
