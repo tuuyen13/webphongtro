@@ -12,7 +12,7 @@
   padding: 10px 10px;
   display: flex;
   border: 2px solid #cbc8c7;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
 }
 .content.heart-active{
