@@ -12,7 +12,7 @@
         "description2":"Nếu quý khách tìm kiếm trên google với từ khóa dọn dẹp nhà cửa, hay tổng vệ sinh nhà cửa sẽ có rất nhiều công ty cung cấp dịch vụ vệ sinh, nhưng tìm đúng công ty cung cấp đúng mong muốn làm sạch nhà của mình, quý khách cần hiểu rõ các gói để chọn dịch vụ sao cho phù hợp.",
         "description3":"Trên đây là chi tiết từng bảng giá dịch vụ vệ sinh nhà cửa mà chúng tôi cung cấp cho quý khách hàng. Để biết thêm thông tin cũng như giá cả thuê dịch vụ chính xác vui lòng liên hệ với chúng tôi",
         "contact": ["Clean 4 U", "090 123 4567", "https://zalo.me/0978709247"],
-        "image1":"img/cleaningservice_img/clean-1.jpeg",
+        "image1":"img/cleaningservice_img/clean-1.jpg",
         "pricetable":["120.000 – 200.000", "120.000 – 150.000", "50.000 – 100.000", "Hóa chất" ]
     },
     {
@@ -44,7 +44,7 @@
         "description2":"Nếu quý khách tìm kiếm trên google với từ khóa dọn dẹp nhà cửa, hay tổng vệ sinh nhà cửa sẽ có rất nhiều công ty cung cấp dịch vụ vệ sinh, nhưng tìm đúng công ty cung cấp đúng mong muốn làm sạch nhà của mình, quý khách cần hiểu rõ các gói để chọn dịch vụ sao cho phù hợp.",
         "description3":"Trên đây là chi tiết từng bảng giá dịch vụ vệ sinh nhà cửa mà chúng tôi cung cấp cho quý khách hàng. Để biết thêm thông tin cũng như giá cả thuê dịch vụ chính xác vui lòng liên hệ với chúng tôi",
         "contact": ["Clean 4 U", "090 123 4567", "https://zalo.me/0978709247"],
-        "image1":"img/cleaningservice_img/clean-3.jpeg",
+        "image1":"img/cleaningservice_img/clean-3.jpg",
         "pricetable":["120.000 – 200.000", "200.000 – 250.000", "50.000 – 100.000", "Dụng cụ" ]
     },
     {
@@ -60,7 +60,7 @@
         "description2":"Nếu quý khách tìm kiếm trên google với từ khóa dọn dẹp nhà cửa, hay tổng vệ sinh nhà cửa sẽ có rất nhiều công ty cung cấp dịch vụ vệ sinh, nhưng tìm đúng công ty cung cấp đúng mong muốn làm sạch nhà của mình, quý khách cần hiểu rõ các gói để chọn dịch vụ sao cho phù hợp.",
         "description3":"Trên đây là chi tiết từng bảng giá dịch vụ vệ sinh nhà cửa mà chúng tôi cung cấp cho quý khách hàng. Để biết thêm thông tin cũng như giá cả thuê dịch vụ chính xác vui lòng liên hệ với chúng tôi",
         "contact": ["Clean 4 U", "090 123 4567", "https://zalo.me/0936456678"],
-        "image1":"img/cleaningservice_img/clean-4.jpeg",
+        "image1":"img/cleaningservice_img/clean-4.jpg",
         "pricetable":["120.000 – 200.000", "170.000 – 190.000", "50.000 – 100.000", "Hóa chất, dụng cụ" ]
     },
     {
@@ -76,7 +76,7 @@
         "description2":"Nếu quý khách tìm kiếm trên google với từ khóa dọn dẹp nhà cửa, hay tổng vệ sinh nhà cửa sẽ có rất nhiều công ty cung cấp dịch vụ vệ sinh, nhưng tìm đúng công ty cung cấp đúng mong muốn làm sạch nhà của mình, quý khách cần hiểu rõ các gói để chọn dịch vụ sao cho phù hợp.",
         "description3":"Trên đây là chi tiết từng bảng giá dịch vụ vệ sinh nhà cửa mà chúng tôi cung cấp cho quý khách hàng. Để biết thêm thông tin cũng như giá cả thuê dịch vụ chính xác vui lòng liên hệ với chúng tôi",
         "contact": ["Clean 4 U", "090 123 4567", "https://zalo.me/0978709247"],
-        "image1":"img/cleaningservice_img/clean-5.jpeg",
+        "image1":"img/cleaningservice_img/clean-5.jpg",
         "pricetable":["120.000 – 200.000", "120.000 – 150.000", "50.000 – 100.000", "Hóa chất, dụng cụ" ]
     },
     {
@@ -92,7 +92,7 @@
         "description2":"Nếu quý khách tìm kiếm trên google với từ khóa dọn dẹp nhà cửa, hay tổng vệ sinh nhà cửa sẽ có rất nhiều công ty cung cấp dịch vụ vệ sinh, nhưng tìm đúng công ty cung cấp đúng mong muốn làm sạch nhà của mình, quý khách cần hiểu rõ các gói để chọn dịch vụ sao cho phù hợp.",
         "description3":"Trên đây là chi tiết từng bảng giá dịch vụ vệ sinh nhà cửa mà chúng tôi cung cấp cho quý khách hàng. Để biết thêm thông tin cũng như giá cả thuê dịch vụ chính xác vui lòng liên hệ với chúng tôi",
         "contact": ["Clean 4 U", "090 123 4567", "https://zalo.me/0936456678"],
-        "image1":"img/cleaningservice_img/clean-6.jpeg",
+        "image1":"img/cleaningservice_img/clean-6.jpg",
         "pricetable":["120.000 – 200.000", "120.000 – 150.000", "50.000 – 100.000", "Hóa chất, dụng cụ" ]
     }
     
