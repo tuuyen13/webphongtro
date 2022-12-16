@@ -54,7 +54,7 @@ $(document).ready(function(){
         {
         if ((document.getElementById("cr_no").value == "") || (document.getElementById("cvcpwd").value == "") ||(document.getElementById("date").value == "")) 
         {
-            alert("Vui lòng nhập thông tin thanh toánn!");
+            alert("Vui lòng nhập thông tin thanh toán!");
             document.getElementById("cr_no").focus();
         }
              else{ modalCredit.style.display = "block";
