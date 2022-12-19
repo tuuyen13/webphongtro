@@ -63,8 +63,9 @@
       <link media="screen" rel="stylesheet" href="/v2/gateway/css/qr-85a981f07d2e45ab7accaee63e4c3285.css"/>
 </head>
 <body>
-    <div id="modalPayMomo" class="modal">           
-        <div class="modal-content" style="width: fit-content;">
+    <div id="modalPayMomo" class="modal" >           
+        <div class="modal-content" style="width:fit-content;">
+            <span id="close" class="close">x</span>
             <i class="fa fa-check text-center" style="font-size:48px;color:rgb(17, 219, 34)"></i>
         <h4 class="text-center">Thanh toán thành công</h4>
         <div class="buttons">             
@@ -107,17 +108,17 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="row" id="qr-web-ui">
                 <div class="payment-form col-lg-12" id="form-qr-code">
                     <div class="payment-content" id="body-payment-content">
-                        
+
                         <div class="payment-qr col-sm-7 mx-auto" style="padding: 30px 0px;">
                             <div class="payment-cta">
                                 <div>
                                     <div>
                                         <ul class="logo-link">
-                                            <li><img class="merchant-logo-link" src="img/Logo1.png"></li>
+                                            <li><img class="merchant-logo-link" src="img/logomoro.png"></li>
                                             <li class="fa fa-link" style="font-size:25px;color:#FEA116"></li>
                                             <li><img class="merchant-logo-link" src="img/paymentMomo.png"></li>
                                         </ul>
@@ -133,13 +134,15 @@
                     </div>
                     </div>
                 </div>
-                
+
             </div>
-           
-            
-      
+
+            <button id="btnPay" type="button" style ="background-color:white"class="btn-payment mt-2"></button>
+
+
+
         </div>
-      
+
       </div> 
       <script>
         window.dataLayer = window.dataLayer || [];
@@ -385,6 +388,6 @@ if ( window.history.replaceState ) {
     window.history.replaceState( null, null, window.location.href );
 }
 </script>
-    
+
 </body>
 </html>
