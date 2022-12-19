@@ -34,8 +34,8 @@ fetch(url1)
                     <div class="d-flex justify-content-between">
                       <a class="btn btn-sm btn-primary rounded py-2 px-4" onclick="Details(${post.id})"> Chi Tiết </a>
                         <div>
-                            <a class="btn btn-outline-light btn-social" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
-                            <a class="btn btn-outline-light btn-social" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+                            <a class="btn btn-outline-light btn-social"target="_blank" rel="nofollow" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                            <a class="btn btn-outline-light btn-social"target="_blank" rel="nofollow" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
 
                         </div>
                     </div>
@@ -78,8 +78,8 @@ function getNormalNews1() {
               <div class="d-flex justify-content-between">
                 <a class="btn btn-sm btn-primary rounded py-2 px-4" onclick="Details(${post.id})"> Chi Tiết </a>
                   <div>
-                      <a class="btn btn-outline-light btn-social" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
-                      <a class="btn btn-outline-light btn-social" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+                      <a class="btn btn-outline-light btn-social" target="_blank" rel="nofollow" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                      <a class="btn btn-outline-light btn-social" target="_blank" rel="nofollow" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
                   </div>
               </div>
           </div>
@@ -121,8 +121,8 @@ fetch(url1)
                   <div class="d-flex justify-content-between">
                     <a class="btn btn-sm btn-primary rounded py-2 px-4" onclick="Details(${post.id})"> Chi Tiết </a>
                       <div>
-                          <a class="btn btn-outline-light btn-social" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
-                          <a class="btn btn-outline-light btn-social" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+                          <a class="btn btn-outline-light btn-social" target="_blank" rel="nofollow" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                          <a class="btn btn-outline-light btn-social"target="_blank" rel="nofollow"  href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
 
                       </div>
                   </div>
@@ -165,8 +165,8 @@ function getNormalNews2() {
             <div class="d-flex justify-content-between">
               <a class="btn btn-sm btn-primary rounded py-2 px-4" onclick="Details(${post.id})"> Chi Tiết </a>
                 <div>
-                    <a class="btn btn-outline-light btn-social" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
-                    <a class="btn btn-outline-light btn-social" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" rel="nofollow" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" rel="nofollow" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
                 </div>
             </div>
         </div>
@@ -236,8 +236,6 @@ function ShowPostDetails() {
            <h5><i class="fa-solid fa-location-dot", style="color: #FEA116;"></i> &nbsp; ${post.address}</h5>
            <p style="text-align: justify;">${post.description[0]}</p>
            <p style="text-align: justify;">${post.description[1]}</p>
-           <p style="text-align: justify;">${post.description[2]}</p> 
-          <p style="text-align: justify;">${post.description[3]}</p>
          </div>
 
          <section class="section post-map"><div class="section-header"><h3 >Bản đồ</h3>

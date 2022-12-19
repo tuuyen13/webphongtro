@@ -1130,7 +1130,17 @@
   margin-top: 1rem;
   cursor: pointer;
   transition: .5s;
+  
 }
+.btn-service:hover{
+  background:#993B22;
+  color:#ffffff;
+}
+.btn-service:active{
+  background:#993B22;
+  color:#ffffff;
+}
+
 .btn-container{
   display: flex;
   justify-content: center;
