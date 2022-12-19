@@ -9,7 +9,7 @@ fetch(url1)
         var html = posts.map(function(post) {
             return `<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="room-item shadow rounded overflow-hidden">
-                <div class="position-relative">
+                <div class="position-relative zoom">
                     <img class="img-fluid" src="${post.image_thumb}" alt="">
                 </div>
                 <div class="p-4 mt-2">

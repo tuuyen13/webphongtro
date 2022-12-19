@@ -32,29 +32,39 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="Blog_style1.css"> 
      <!-- Style CSS comment -->
-     <link rel="stylesheet" href="css_comment/style.css">
+     <link rel="stylesheet" href="css_comment/style.css"> 
     
      <!--Only for demo comment purpose - no need to add.-->
      <!-- <link rel="stylesheet" type="text/css" href="css_comment/demo.css" /> -->
      
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!--  -->
     <style>
-        p.left {
+        /* .imgblog
+        {   margin-right:50px;
+            margin-left:50px;
+            width:"100%";
+        } */
+      
+        h1 {
+            font-size: 40px;
+             
+             }
+        /* class thẻ p căn lề và căn size chữ cho bài tin */
+        .p-1{
+            font-size: 25px;
+            text-align:justify;
+        }
+           /*class thẻ p căn chỉnh cho text phần comment*/
+        .p-2 {
            text-align: left;
+           font-size: 20px;
         }
-        p.right {
-           text-align: right;
-        }
-        p.center {
-           text-align: center;
-        }
-    
     
         h4.left {
            text-align: left;
            color: #FEA116;
         }      
-    
     
         table, th, td{
             
@@ -73,8 +83,14 @@
         }
 
          .div-2 {
-            margin-left:190%;
+            margin-left:180%;
         } 
+        /* căn lề text */
+        .div-align
+        {
+            margin-right:50px;
+            margin-left:50px;
+        }
     </style>
 </head>
 
@@ -94,6 +110,7 @@
 
 
         <!-- Page Header Start -->
+        
         <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
@@ -154,12 +171,13 @@
         <!-- Bài viết -->
         
         <!-- <div class="container-xxl py-5"> -->
+        <div class="div-align">
             <div class="container">
                 <div>
                 <h5 class="section-title text-start text-primary text-uppercase">Bài viết chi tiết</h5>           
                     </br>
                     </br>
-                    <div class="row g-5 align-items-center">
+                    <div>
                         <div class="Thông tin demo">
                             <i class='fas fa-clock' style='font-size:px;color:rgb(75, 81, 137)'></i>        
                             <small class="Lượt xem">5 ngày trước</small>
@@ -167,27 +185,30 @@
                             <i class="fa fa-eye" style='font-size:px;color:rgb(72, 120, 133)'></i>     
                             <small class="Lượt xem">167 lượt xem</small>
                             &ensp;&ensp;&ensp;          
-                        </div> 
-                        <h1 align="center">Đặc điểm nổi bật của căn hộ Legacy Central là gì?</h1>                                             
-                                           
-                        <p style="text-align:justify">Khi tìm hiểu về bất kỳ dự án bất động sản nào, yếu tố về vị trí bao giờ cũng đóng vai trò quan trọng bậc nhất. Chúng tác động trực tiếp đến hệ thống giao thông, khả năng kết nối và hàng loạt các tiện ích. Căn hộ Legacy Central may mắn sở hữu trong mình đầy đủ các yếu tố của một dự án chất lượng với yếu tố vàng về vị trí.
-                            Vị trí căn hộ tọa lạc tại đường Thuận Giao 25, phường Thuận Giao, TP Thuận An, tỉnh Bình Dương. Chung cư Legacy Central nằm tại vị trí đối diện với trường THCS Thuận Giao và nằm trong khu vực dân cư đông đúc, sầm uất.                   
-                            Trong một vài năm trở lại đây, tỉnh Bình Dương là một trong những tỉnh phía nam có tốc độ phát triển kinh tế đáng kinh ngạc.</p>          
-                                                                                                                                                       
-                        <center><img src="img/Blog_Hinhanh/Blog 1_1.jpg" width="100%"</center> 
+                        </div>
+                        </br>
+                        </br>
+                        <h1 align="center">Đặc điểm nổi bật của căn hộ Legacy Central là gì?</h1>
+                        </br>
+                        </br>                      
+                        <p class="p-1">Khi tìm hiểu về bất kỳ dự án bất động sản nào, yếu tố về vị trí bao giờ cũng đóng vai trò quan trọng bậc nhất.</p>                      
+                        </br>
+                        <p class="p-1">Chúng tác động trực tiếp đến hệ thống giao thông, khả năng kết nối và hàng loạt các tiện ích. Căn hộ Legacy Central may mắn sở hữu trong mình đầy đủ các yếu tố của một dự án chất lượng với yếu tố vàng về vị trí.Vị trí căn hộ tọa lạc tại đường Thuận Giao 25, phường Thuận Giao, TP Thuận An, tỉnh Bình Dương. Chung cư Legacy Central nằm tại vị trí đối diện với trường THCS Thuận Giao và nằm trong khu vực dân cư đông đúc, sầm uất. Trong một vài năm trở lại đây, tỉnh Bình Dương là một trong những tỉnh phía nam có tốc độ phát triển kinh tế đáng kinh ngạc.</p>                                                                                                                                                                                                       
+                        </br>
+                        <center><img src="img/Blog_Hinhanh/Blog 1_1.jpg" width="100%"></center> 
                         </br>    
+                            <i><center><p style="font-size:25px">Căn hộ cao cấp Legacy Central</p></center></i>
                         </br>
-                            <i><center><small>Căn hộ cao cấp Legacy Central</small></center></i>
+                            <p class="p-1">Không đơn thuần là “sân sau” của thành phố Hồ Chí Minh, đây còn là khu vực trực tiếp nhận được sự phát triển, thu hút mạnh mẽ của các nhà đầu tư. Bình Dương hiện thủ phủ công nghiệp đứng đầu cả nước. Sự bứt phá về kinh tế đã tạo đà cho bất động sản, đặc biệt là nhu cầu về các dự án căn hộ chung cư tại đây ngày càng tăng cao. Sự xuất hiện của dự án Legacy Central được xem là cơn mưa tưới mát cho thị trường bất động sản Bình Dương vốn đang rất khát những căn hộ giá rẻ, căn hộ cho người thu nhập thấp.</p>
                         </br>
-                            <p style="text-align:justify">Không đơn thuần là “sân sau” của thành phố Hồ Chí Minh, đây còn là khu vực trực tiếp nhận được sự phát triển, thu hút mạnh mẽ của các nhà đầu tư. Bình Dương hiện thủ phủ công nghiệp đứng đầu cả nước. Sự bứt phá về kinh tế đã tạo đà cho bất động sản, đặc biệt là nhu cầu về các dự án căn hộ chung cư tại đây ngày càng tăng cao. Sự xuất hiện của dự án Legacy Central được xem là cơn mưa tưới mát cho thị trường bất động sản Bình Dương vốn đang rất khát những căn hộ giá rẻ, căn hộ cho người thu nhập thấp.</p>
-                        </br>
-                        <p style="text-align:justify">Sự bứt phá về kinh tế đã tạo đà cho bất động sản, đặc biệt là nhu cầu về các dự án căn hộ chung cư tại đây ngày càng tăng cao. Sự xuất hiện của dự án Legacy Central được xem là cơn mưa tưới mát cho thị trường bất động sản Bình Dương vốn đang rất khát những căn hộ giá rẻ, căn hộ cho người thu nhập thấp.
+                        <p class="p-1">Sự bứt phá về kinh tế đã tạo đà cho bất động sản, đặc biệt là nhu cầu về các dự án căn hộ chung cư tại đây ngày càng tăng cao. Sự xuất hiện của dự án Legacy Central được xem là cơn mưa tưới mát cho thị trường bất động sản Bình Dương vốn đang rất khát những căn hộ giá rẻ, căn hộ cho người thu nhập thấp.
 
                             Liên kết vùng của dự án căn hộ Legacy Central
                             
                             Legacy Central là dự án sở hữu vị trí đầy thuận lợi với địa thế cực đẹp. Trước tiên, dự án nằm ngay tại khu vực tiếp giáp với thành phố Hồ Chí Minh. Thông qua hệ thống cơ sở hạ tầng hiện nay đã được đồng bộ với các tuyến huyết mạch: Quốc lộ 1A, Quốc lộ 13, đường ĐT 743, cầu Đồng Nai, bến xe Miền Đông, cầu Phú Long vượt sông Sài Gòn,… Cư dân sẽ không phải mất quá nhiều thời gian để có thể di chuyển vào các quận trung tâm: quận 1, 2, Thủ Đức,…</p>
-                        <p style="text-align:justify">Hi vọng rằng, với những thông tin đánh giá chi tiết về căn hộ Legacy Central trên sẽ mang lại cho bạn nhiều tham khảo hữu ích. Chọn thuê căn hộ giá rẻ tại Bình Dương đang là mục đích của rất nhiều người. Vì vậy, chắc chắn rằng dòng căn hộ này đang là đích đến mà nhiều người hướng đến. Hãy nhanh tay liên hệ để có được căn hộ thuê trong mơ tại Legacy Central bạn nhé!</p>
-                            <i><p class="right">Tổng hợp bởi đội ngũ nhân viên Moro</p></i>                    
+                        </br>
+                            <p class="p-1">Hi vọng rằng, với những thông tin đánh giá chi tiết về căn hộ Legacy Central trên sẽ mang lại cho bạn nhiều tham khảo hữu ích. Chọn thuê căn hộ giá rẻ tại Bình Dương đang là mục đích của rất nhiều người. Vì vậy, chắc chắn rằng dòng căn hộ này đang là đích đến mà nhiều người hướng đến. Hãy nhanh tay liên hệ để có được căn hộ thuê trong mơ tại Legacy Central bạn nhé!</p>
+                            <i><p style="text-align:right;font-size:25px">Tổng hợp bởi đội ngũ nhân viên Moro</p></i>                    
                          <!-- Trái tim start -->            
                             <div class="heart-btn">
                                 <div class="content">
@@ -228,13 +249,13 @@
                                             <hr>
                                             <div class="div-3">
                                                 <div class="d-flex align-items-center">
-                                                    <img class="img-fluid flex-shrink-0 rounded" src="img/Blog_Hinhanh/F6.jpg" style="width: 120px; height: 120px;">
+                                                    <img class="img-fluid flex-shrink-0 rounded" src="img/Blog_Hinhanh/F6.jpg" style="width: 150px; height: 150px;">
                                                     <div class="ps-3">
                                                         <h6 class="fw-bold mb-1">Thảo Vy</h6>
                                                         <i><small>1 ngày trước</small></i>
 
                                                         <p>&nbsp;</p>
-                                                        <p class="left" margin-left="10px">Trông thích thật</p>
+                                                        <p class="p-2" margin-left="10px">Trông thích thật!</p>
                                                     </div>
                                                 </div>
                                            
@@ -244,7 +265,7 @@
                                         </div>
                                         <hr>
                                         </td>
-                                    </tr>      -
+                                    </tr>      
                                     <!-- Bình luận 2 -->
                                     <tr>  
                                         <td>
@@ -253,13 +274,12 @@
                                             <hr>
                                             <div class="div-3">
                                                 <div class="d-flex align-items-center">
-                                                    <img class="img-fluid flex-shrink-0 rounded" src="img/Blog_Hinhanh/F4.png" style="width: 120px; height: 120px;">
+                                                    <img class="img-fluid flex-shrink-0 rounded" src="img/Blog_Hinhanh/F4.png" style="width: 150px; height: 150px;">
                                                     <div class="ps-3">
                                                         <h6 class="fw-bold mb-1">Anh Anh</h6>
                                                         <i><small>3 ngày trước</small></i>
-
                                                         <p>&nbsp;</p>
-                                                        <p class="left" margin-left="10px">So với những tiện ích trên thì căn hộ phù hợp với giá tiền, nếu có cơ hội mình sẽ mua một căn để đầu cơ :))</p>
+                                                        <p class="p-2">So với những tiện ích trên thì căn hộ phù hợp với giá tiền, nếu có cơ hội mình sẽ mua một căn để đầu cơ :))</p>
                                                     </div>
                                                 </div>
                                            
@@ -269,11 +289,11 @@
                                         </div>
                                         <hr>
                                         </td>
-                                    </tr>      -
+                                    </tr>      
                                                                     
                                 </table>
                             <!-- Box bình luận -->
-                            <!-- <div class="div-2"> -->
+                           
                                 <section id="app">
                                     <div class="container">
                                     <div class="row">
@@ -288,7 +308,7 @@
                                         <div class="col-6">
                                     <textarea type="text" class="input" placeholder="Bình luận của bạn" v-model="newItem" @keyup.enter="addItem()"></textarea>
                                         <div class="div-2">
-                                        <button v-on:click="addItem()" class='primaryContained float-right' type="submit" width="50px">Đăng</button>
+                                        <button v-on:click="addItem()" class='primaryContained float-right' type="submit" width="100px">Đăng</button>
                                         </div>
                                     </div><!-- End col -->
                                     </div><!--End Row -->
@@ -297,23 +317,21 @@
                                 <!-- partial -->
                                     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
                                     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-                                    <script  src="js_comment/script.js"></script>             
-                            <!-- </div> -->
-                            <!-- end box bình luận -->
+                                    <script  src="js_comment/script.js"></script>                                    
                             </div>
                             </div>
                             </div>                    
-
+                            <!-- end box bình luận -->
                     </div>                    
                 </div>
             </div>
         </div>
+    </div>
         <!-- About End -->
      
    
 
-        <!-- Team Start -->
-        <!-- Team End -->
+      
 
 
          <!-- Newsletter Start --> 

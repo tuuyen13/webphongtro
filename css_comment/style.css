@@ -5,20 +5,15 @@
 	padding: 20px;
 }
 
-/* .margin bottom {
-	500px;
-} */
-
 .comment {
 	display: block;
 	transition: all 1s;
 }
 
 .commentClicked {
-	height: fit-content;
 	width: 200%;
-	min-height: 100%;
-	border: 1px solid rgb(175, 175, 175);
+	min-height: 0px;
+	border: 1px solid #eee;
 	border-radius: 5px;
 	padding: 5px 10px
 }
@@ -30,20 +25,21 @@ textarea {
 	padding: 5px 10px;
 	height: 50%;
 	border-radius: 5px 5px 0px 0px;
-	border-bottom: 2px solid #e38131;
+	border-bottom: 2px solid #de5912;
 	transition: all 0.5s;
 	margin-top: 15px;
 }
 
 button.primaryContained {
-	background: #f08d35;
+	background: #d95e18;
 	color: #fff;
 	padding: 10px 10px;
 	border: none;
-	margin-right: 450px;
-	cursor: pointer;	
+	/* margin-left: 200px; */
+	margin-top: 0px;
+	cursor: pointer;
 	text-transform: uppercase;
-	/* letter-spacing: 4px; */
+	letter-spacing: 4px;
 	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 	transition: 1s all;
 	font-size: 10px;
@@ -51,5 +47,5 @@ button.primaryContained {
 }
 
 button.primaryContained:hover {
-	background: #ce5002;
+	background: #d5927b;
 }
