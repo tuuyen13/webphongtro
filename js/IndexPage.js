@@ -33,8 +33,8 @@ fetch(url1)
                     <div class="d-flex justify-content-between">
                     <a class="btn btn-sm btn-primary rounded py-2 px-4" onclick="RentHomeDetails(${post.id})"> Chi Tiết </a>
                         <div>
-                            <a class="btn btn-outline-light btn-social" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
-                            <a class="btn btn-outline-light btn-social" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
+                            <a class="btn btn-outline-light btn-social"target="_blank" rel="nofollow" href="${post.contact[2]}"><img src="img/facebook-seeklogo.com.svg" width="25px" height="25px"></img></a>
+                            <a class="btn btn-outline-light btn-social"target="_blank" rel="nofollow" href="${post.contact[3]}"><img src="img/zalo-seeklogo.com.svg" width="25px" height="25px"></img></i></a>
                         </div>
                     </div>
                 </div>

@@ -72,7 +72,6 @@ var info = detailpost.map(function(post) {
          <li>${post.p1[1]}</li>
           <li>${post.p1[2]}</li>
           <li>${post.p1[3]}</li>
-          <li>${post.p1[4]}</li> 
      </ul>
      <h4>${post.p2[0]}</h4>
      <ul>
@@ -85,6 +84,7 @@ var info = detailpost.map(function(post) {
      <ul>
          <li>${post.p3[1]}</li>
           <li>${post.p3[2]}</li>
+          <li>${post.p3[3]}</li>
      </ul>
         
             
