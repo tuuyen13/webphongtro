@@ -52,13 +52,13 @@
              }
         /* class thẻ p căn lề và căn size chữ cho bài tin */
         .p-1{
-            font-size: 25px;
+            font-size: 16px;
             text-align:justify;
         }
            /*class thẻ p căn chỉnh cho text phần comment*/
         .p-2 {
            text-align: left;
-           font-size: 20px;
+           font-size: 16px;
         }
     
         h4.left {
@@ -105,66 +105,38 @@
         <!-- Spinner End -->
 
         <!-- Header Start -->
-     
-        <!-- Header End -->
-
-
-        <!-- Page Header Start -->
-        
-        <div class="container-fluid bg-dark px-0">
-            <div class="row gx-0">
-                <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">MORO</h1>
-                    </a>
-                </div>
-                <div class="col-lg-9">
-                    <!-- thanh liên hệ -->
-                        <!-- <div class="col-lg-5 px-5 text-end">
-                            <div class="d-inline-flex align-items-center py-2">
-                                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="" href=""><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div> -->
-                    
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                        <a href="index.html" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">MORO</h1>
-                        </a>
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link">Trang chủ</a>
-
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Cho thuê</a>
-                                    <div class="dropdown-menu rounded-0 m-0">
-                                        <a href="" class="dropdown-item">Căn hộ</a>
-                                        <a href="" class="dropdown-item">Phòng trọ</a>
-                                        <a href="" class="dropdown-item">Mặt bằng</a>
-                                    </div>
-                                </div>
-
-                                <a href="" class="nav-item nav-link">Ở ghép</a>
-                                <a href="" class="nav-item nav-link">Vận chuyển</a>
-                                <a href="" class="nav-item nav-link">Dọn phòng</a>
-                                <a href="" class="nav-item nav-link">Thanh toán</a>
-                                <a href="blog_text.html" class="nav-item nav-link">Blog</a>
-                                <a href="about.html" class="nav-item nav-link">About us</a>
-                        
-                            </div>
-                           
-                        </div>
-                    </nav>
-                </div>
+<div class="container-fluid nav-bar bg-transparent" style="background-color: #0F172B;">
+    <nav class="navbar navbar-expand-lg  navbar-light py-0 px-4" style="background-color: #0F172B;" >
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+            <div class="icon p-2 me-2">
+                <img class="img-fluid" src="img/index_img/Logo.png" alt="Icon" style="width: 100px; height: 100px;">
             </div>
+            <h1 class="m-0 text-primary">MORO</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                <a href="RentHome.html" class="nav-item nav-link ">Cho thuê</a>                            
+                <a href="Roommate.html" class="nav-item nav-link " >Ở ghép</a>
+                <a href="delivery_page.html" class="nav-item nav-link">Vận chuyển</a>
+                <a href="cleaningservice.html" class="nav-item nav-link" >Dọn phòng</a>
+                <a href="ServiceMotelRoom.html" class="nav-item nav-link">Dịch vụ</a>
+                <a href="Blog_Full trang.html" class="nav-item nav-link active">Bản tin</a>
+                <a href="Về chúng tôi.html" class="nav-item nav-link" >Về Moro</a> 
+            </div>
+            <a href="Popupdangbai.html" class="btn btn-primary px-3 d-none d-lg-flex">Đăng tin<i class="fa-sharp fa-solid fa-circle-plus" style="margin-top: 5px;margin-left: 7px;"></i></a>
+            <a href="profile.html"><i class="fa-regular fa-circle-user fa-2x" style="color: #FEA116; margin-left: 20px;"></i></i></a>
+
         </div>
-        <!-- Page Header End -->
+    </nav>
+</div>
+<!-- Header End -->
+
+
+      
         <!-- Booking End -->
 
 
@@ -178,7 +150,8 @@
                     </br>
                     </br>
                     <div>
-                        <div class="Thông tin demo">
+                        <div id="BlogDetail">
+                        <!-- <div class="Thông tin demo">
                             <i class='fas fa-clock' style='font-size:px;color:rgb(75, 81, 137)'></i>        
                             <small class="Lượt xem">5 ngày trước</small>
                             &ensp;&ensp;&ensp;
@@ -197,7 +170,7 @@
                         </br>
                         <center><img src="img/Blog_Hinhanh/Blog 1_1.jpg" width="100%"></center> 
                         </br>    
-                            <i><center><p style="font-size:25px">Căn hộ cao cấp Legacy Central</p></center></i>
+                            <i><center><p style="font-size:18px">Căn hộ cao cấp Legacy Central</p></center></i>
                         </br>
                             <p class="p-1">Không đơn thuần là “sân sau” của thành phố Hồ Chí Minh, đây còn là khu vực trực tiếp nhận được sự phát triển, thu hút mạnh mẽ của các nhà đầu tư. Bình Dương hiện thủ phủ công nghiệp đứng đầu cả nước. Sự bứt phá về kinh tế đã tạo đà cho bất động sản, đặc biệt là nhu cầu về các dự án căn hộ chung cư tại đây ngày càng tăng cao. Sự xuất hiện của dự án Legacy Central được xem là cơn mưa tưới mát cho thị trường bất động sản Bình Dương vốn đang rất khát những căn hộ giá rẻ, căn hộ cho người thu nhập thấp.</p>
                         </br>
@@ -208,7 +181,8 @@
                             Legacy Central là dự án sở hữu vị trí đầy thuận lợi với địa thế cực đẹp. Trước tiên, dự án nằm ngay tại khu vực tiếp giáp với thành phố Hồ Chí Minh. Thông qua hệ thống cơ sở hạ tầng hiện nay đã được đồng bộ với các tuyến huyết mạch: Quốc lộ 1A, Quốc lộ 13, đường ĐT 743, cầu Đồng Nai, bến xe Miền Đông, cầu Phú Long vượt sông Sài Gòn,… Cư dân sẽ không phải mất quá nhiều thời gian để có thể di chuyển vào các quận trung tâm: quận 1, 2, Thủ Đức,…</p>
                         </br>
                             <p class="p-1">Hi vọng rằng, với những thông tin đánh giá chi tiết về căn hộ Legacy Central trên sẽ mang lại cho bạn nhiều tham khảo hữu ích. Chọn thuê căn hộ giá rẻ tại Bình Dương đang là mục đích của rất nhiều người. Vì vậy, chắc chắn rằng dòng căn hộ này đang là đích đến mà nhiều người hướng đến. Hãy nhanh tay liên hệ để có được căn hộ thuê trong mơ tại Legacy Central bạn nhé!</p>
-                            <i><p style="text-align:right;font-size:25px">Tổng hợp bởi đội ngũ nhân viên Moro</p></i>                    
+                            <i><p style="text-align:right;font-size:18px">Tổng hợp bởi đội ngũ nhân viên Moro</p></i>   -->
+                            </div>                  
                          <!-- Trái tim start -->            
                             <div class="heart-btn">
                                 <div class="content">
@@ -356,51 +330,74 @@
         <!-- Newsletter Start
         
 
-     <-- Footer Start  -->
-        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container pb-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="bg-primary rounded p-4">
-                            <a href="Homepage.html"><h1 class="text-white text-uppercase mb-3">MORO</h1></a>
-                            <p class="text-white mb-0">
-								 <a class="text-dark fw-medium" href="https://freewebsitecode.com/hotel-html-template-pro"></a>“Để việc tìm một mái ấm và chia sẻ không gian trở nên tối ưu và thuận tiện nhất, MORO
-                                 mang đến cho người dùng sự trải nghiệm hoàn mỹ về dịch vụ.”
-							</p>
+     <!-- Footer Start  -->
+     <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-primary rounded p-4">
+                        <a href="index.html"><h1 class="text-white text-uppercase mb-3">MORO</h1></a>
+                        <p class="text-white mb-0">
+                             <a class="text-dark fw-medium" href="https://freewebsitecode.com/hotel-html-template-pro"></a>“Để việc tìm một mái ấm và chia sẻ không gian trở nên tối ưu và thuận tiện nhất, MORO
+                             mang đến cho người dùng sự trải nghiệm hoàn mỹ về dịch vụ.”
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Liên hệ</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Số 669 Quốc lộ 1, khu phố 3, Phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>012 345 678</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>moro@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="row gy-5 g-4">
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Chính sách</h6>
+                            <a class="btn btn-link" href="">Chính sách bảo mật</a>
+                            <a class="btn btn-link" href="">Chính sách giao dịch</a>
+                            <a class="btn btn-link" href="">Chính sách dịch vụ</a>
+                            <a class="btn btn-link" href="">Chính sách kiểm duyệt</a>
+                            <a class="btn btn-link" href="">Hỗ trợ</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Dịch vụ</h6>
+                            <a class="btn btn-link" href="RentHome.html">Cho thuê</a>
+                            <a class="btn btn-link" href="Roommate.html">Ở ghép</a>
+                            <a class="btn btn-link" href="delivery_page.html">Vận chuyển</a>
+                            <a class="btn btn-link" href="cleaningservice.html">Dọn phòng</a>
+                            <a class="btn btn-link" href="Blog_Full trang.html">Bản tin</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Liên hệ</h6>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Số 669 Quốc lộ 1, khu phố 3, Phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>012 345 678</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>moro@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/luoisskincare"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/luoisskincare/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                         <a class="border-bottom" href="https://www.instagram.com/luoisskincare/" style="margin-top: 30px;"></a>Copyright © 2022 MORO.COM
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Trang chủ</a>
+                            <a href="">Cookies</a>
+                            <a href="">Hỗ trợ</a>
+                            <a href="">FQAs</a>
+                            <img src="img/index_img/DK.png" style="width: 140px; height: 50px;">
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-12">
-                        <div class="row gy-5 g-4">
-                            <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Chính sách</h6>
-                                <a class="btn btn-link" href="">Chính sách bảo mật</a>
-                                <a class="btn btn-link" href="">Chính sách giao dịch</a>
-                                <a class="btn btn-link" href="">Chính sách dịch vụ</a>
-                                <a class="btn btn-link" href="">Chính sách kiểm duyệt</a>
-                                <a class="btn btn-link" href="">Hỗ trợ</a>
-                            </div>
-                            <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Dịch vụ</h6>
-                                <a class="btn btn-link" href="">Cho thuê</a>
-                                <a class="btn btn-link" href="Roommate.html">Ở ghép</a>
-                                <a class="btn btn-link" href="delivery_page.html">Vận chuyển</a>
-                                <a class="btn btn-link" href="cleaningservice.html">Dọn phòng</a>
-                                <a class="btn btn-link" href="Blog_Full trang.html">Bản tin</a>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- Footer End -->
                               
                         <!-- Box bình luận -->
         <!-- Messenger Plugin chat Code -->
@@ -438,31 +435,7 @@
                    
                
 
-        <!-- Footer Start -->
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                             <a class="border-bottom" href="https://www.instagram.com/luoisskincare/"></a> Đã đăng ký với Bộ Công Thương. 
-							
-							
-							 <a class="border-bottom" href="https://www.instagram.com/luoisskincare/">CÔNG TY THHH MORO</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Trang chủ</a>
-                                <a href="">Cookies</a>
-                                <a href="">Hỗ trợ</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-        </div>
-        <!-- Footer End -->
-
+       
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -482,6 +455,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 
 </html>

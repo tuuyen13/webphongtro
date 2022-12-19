@@ -56,48 +56,44 @@ function showBlogDetails() {
     // lấy mảng mới và map ra html
     var info = detailpost.map(function(post) {
        
-        return `<h6 class="section-title text-start text-primary text-uppercase" style="margin: 20px">Bài viết chi tiết</h6>           
-        </br>
-        </br>
-        <div class="row align-items-center" >
-            <div class="Thông tin demo">
-                <i class='fas fa-clock' style='font-size:px;color:rgb(75, 81, 137)'></i>        
-                <small class="Lượt xem">${post.day}</small>
-                &ensp;&ensp;&ensp;
-                <i class="fa fa-eye" style='font-size:px;color:rgb(72, 120, 133)'></i>     
-                <small class="Lượt xem">${post.view}</small>
-                &ensp;&ensp;&ensp;          
-            </div> 
-            <br>
-            <br>
-            <h1 align="center">${post.title}</h1>                                             
-                           
-            <p style="text-align:justify">${post.p1[0]}</p>
-            <p style="text-align:justify">${post.p1[1]}</p>
-            </br>
-            <center>
-                <img class="img-fluid"  src="${post.image_1}" style="margin-left: auto; margin-right: auto;  margin-top: auto; margin-bottom: 3ch;" width="100%" height="70%"</center>
-            </br>    
-                <i><center><small>${post.image_title}</small></center></i>
-            </br>
-                <p style="text-align:justify"></p>
-            </br>
-            <p style="text-align:justify">${post.p2[0]}</p>
-            <p style="text-align:justify">${post.p2[1]}</p>
-            <p style="text-align:justify">${post.p2[2]}</p>
-            <p style="text-align:justify">${post.p2[3]}</p>
-                <i><p class="right">Tổng hợp bởi đội ngũ nhân viên Moro</p></i>                    
-            
-        </div>`; 
+        return ` <div class="Thông tin demo">
+        <i class='fas fa-clock' style='font-size:px;color:rgb(75, 81, 137)'></i>        
+        <small class="Lượt xem">${post.day}</small>
+        &ensp;&ensp;&ensp;
+        <i class="fa fa-eye" style='font-size:px;color:rgb(72, 120, 133)'></i>     
+        <small class="Lượt xem">${post.view}</small>
+        &ensp;&ensp;&ensp;          
+    </div>
+    </br>
+    </br>
+    <h1 align="center" >${post.title}</h1>
+    </br>
+    </br>                      
+    <p class="p-1" style="text-align:justify">${post.p1[0]}</p>                      
+    </br>
+    <p class="p-1" style="text-align:justify">${post.p1[1]}</p>                                                                                                                                                                                                       
+    </br>
+    <center><img src="${post.image_1}" width="100%"></center> 
+    </br>    
+        <i><center><p style="font-size:18px">${post.image_title}</p></center></i>
+    </br>
+        <p class="p-1" style="text-align:justify">${post.p2[0]}</p>
+    </br>
+    <p class="p-1" style="text-align:justify">${post.p2[1]}</p>
+    </br>
+        <p class="p-1" style="text-align:justify">${post.p2[2]}</p>
+        <p class="p-1" style="text-align:justify">${post.p2[3]}</p>
+
+        <i><p style="text-align:right;font-size:18px" >Được tổng hợp bởi Đội ngũ Moro</p></i>  </div>` ; 
     })
     
-    document.getElementById("detailBlogs").innerHTML = info;
+    document.getElementById("BlogDetail").innerHTML = info;
 
    
   })
 }
 function Details(id) {
     localStorage.setItem("ID_POST", id);
-    window.location.href = "Blog_details.html";
+    window.location.href = "Blog_Detail.html";
     }
 
