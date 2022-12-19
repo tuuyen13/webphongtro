@@ -865,9 +865,9 @@ body{font-size:16px;color:#303233;font-family:"Poppins", sans-serif;}
   color: #fa8c16
 }
 
-.time-expire-text, span {
+/* .time-expire-text, span {
   font-size: 16px
-}
+} */
 
 .payment-form .expire-content .box-expire .expire-text p {
   margin-top: auto;
@@ -1058,9 +1058,9 @@ body{font-size:16px;color:#303233;font-family:"Poppins", sans-serif;}
   padding-top: 20px
 }
 
-.btn-momo, .receipt > span, span {
+/* .btn-momo, .receipt > span, span {
   font-weight: 500
-}
+} */
 
 .receipt > span {
   font-size: 21px
