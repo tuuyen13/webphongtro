@@ -17,7 +17,7 @@
 }
 .content.heart-active{
   border-color: hsl(31, 77%, 53%);
-  background: #fbfafa;
+  background: hsl(31, 100%, 86%);
   
 }
 .heart{
